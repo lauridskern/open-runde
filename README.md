@@ -15,9 +15,9 @@ The typeface was initially called Inter Soft but was renamed to not conflict wit
 
 ## Questions
 - Can you add more weights? -> Feel free to open an issue if you require a specific weight
-- I found a weird looking glyhp -> Please open an issue and I'll try to fix it
+- I found a weird-looking glyph -> Please open an issue and I'll try to fix it
 - Can you make it a variable font? -> Probably not
-- Can I legally use Inter for my purpose? -> Most likely yes! Inter is free and open source. ([Read the license](LICENSE.txt) for details.)
+- Can I legally use Open Runde for my purpose? -> Most likely yes! Open Runde is free and open source. The license is the same as Inter's ([Read the license](LICENSE.txt) for details.)
 
 ## Design
 
