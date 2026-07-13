@@ -1,3 +1,5 @@
 **/*.glyphspackage/UIState.plist
 **/*(Autosaved).glyphs
 .DS_Store
+__pycache__/
+*.pyc

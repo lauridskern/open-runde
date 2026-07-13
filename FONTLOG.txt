@@ -1,0 +1,34 @@
+FONTLOG for Open Runde
+======================
+
+This file records the history of Open Runde, a rounded derivative of Inter.
+
+Basic Font Information
+----------------------
+Open Runde applies optically balanced corner rounding to Inter while retaining
+the original family's metrics, glyph coverage, components, kerning, and
+OpenType layout behavior.
+
+Version 2.000 - 2026-07-13
+--------------------------
+- Rebuilt from Inter 4.001 sources at optical size 14.
+- Expanded the family to Thin through Black (100-900).
+- Added a true italic counterpart for every weight.
+- Replaced the previous Glyphs Mini rounding with the reviewed Open Runde v10
+  geometry algorithm.
+- Added automatic straight-rail reconstruction for eligible long-edge joins.
+- Added complete copyright, authorship, license, naming, style-linking, and
+  embedding metadata.
+- Changed the canonical desktop export to TrueType and regenerated WOFF2 files.
+- Added an individual full-character proof for every family member.
+- Removed the obsolete four-file Glyphs source directory.
+
+Version 1.001 - 2023
+--------------------
+- Published Regular, Medium, SemiBold, and Bold upright styles generated with
+  the Glyphs Mini rounded-corners tool.
+
+Acknowledgements
+----------------
+Inter was designed by Rasmus Andersson with contributions from The Inter
+Project Authors. Open Runde was adapted and maintained by Laurids Kern.

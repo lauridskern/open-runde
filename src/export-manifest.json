@@ -1,0 +1,405 @@
+{
+  "family": "Open Runde",
+  "version": "2.000",
+  "algorithm": "openrunde-reference-fit-v10-family-support-intersection-unfillet",
+  "optical_size": 14,
+  "base_bold_H_stem": 305.555298,
+  "faces": [
+    {
+      "style": "Thin",
+      "weight": 100,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable.ttf",
+      "source_sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "radius_at_90_degrees": 29.14564,
+      "measured_H_stem": 46.0,
+      "glyphs": 2937,
+      "simple_glyphs_processed": 1034,
+      "glyphs_changed": 984,
+      "rounded_corners": 6400,
+      "normalized_rail_pairs": 57,
+      "reverted_glyphs": [
+        "l.ss02",
+        "uni026C.ss02",
+        "iota",
+        "pi"
+      ],
+      "warnings": {
+        "l.ss02": [
+          "topology-changed"
+        ],
+        "uni026C.ss02": [
+          "topology-changed"
+        ],
+        "iota": [
+          "topology-changed"
+        ],
+        "pi": [
+          "topology-changed"
+        ]
+      },
+      "ttf": "src/desktop/OpenRunde-Thin.ttf",
+      "ttf_sha256": "8af1af1cd275b2f4656c7dcc0beba33aa0177d898529bbd26be81969c0e06d1b",
+      "woff2": "src/web/OpenRunde-Thin.woff2",
+      "woff2_sha256": "8a05bd993d93fa75c79fd306db3c843803d70c5098809d2bce4a83f198e88ec3"
+    },
+    {
+      "style": "ExtraLight",
+      "weight": 200,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable.ttf",
+      "source_sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "radius_at_90_degrees": 38.354087,
+      "measured_H_stem": 93.99707,
+      "glyphs": 2937,
+      "simple_glyphs_processed": 1034,
+      "glyphs_changed": 988,
+      "rounded_corners": 6456,
+      "normalized_rail_pairs": 72,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-ExtraLight.ttf",
+      "ttf_sha256": "0ab1188e425abba5866b176b3e9fca184bbd9ed0652f21bd5e50c4a5d655dcbe",
+      "woff2": "src/web/OpenRunde-ExtraLight.woff2",
+      "woff2_sha256": "5300b271d86a8087aeb4c16f1e0b1e01a584ca086a2dadc925ae2a12f99dacf5"
+    },
+    {
+      "style": "Light",
+      "weight": 300,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable.ttf",
+      "source_sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "radius_at_90_degrees": 46.875938,
+      "measured_H_stem": 142.00293,
+      "glyphs": 2937,
+      "simple_glyphs_processed": 1034,
+      "glyphs_changed": 988,
+      "rounded_corners": 6443,
+      "normalized_rail_pairs": 73,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-Light.ttf",
+      "ttf_sha256": "45e177488d819529a21ba5fe42c319c5a9a04a2d450430b767ce9d3de2e8016b",
+      "woff2": "src/web/OpenRunde-Light.woff2",
+      "woff2_sha256": "3ea8d1c742f9984db1aec012fe9d8c14b1b8bcedd51cb52ef768df7462331b54"
+    },
+    {
+      "style": "Regular",
+      "weight": 400,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable.ttf",
+      "source_sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "radius_at_90_degrees": 54.85503,
+      "measured_H_stem": 190.0,
+      "glyphs": 2937,
+      "simple_glyphs_processed": 1034,
+      "glyphs_changed": 988,
+      "rounded_corners": 6433,
+      "normalized_rail_pairs": 57,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-Regular.ttf",
+      "ttf_sha256": "9ab85d9c83369e488250eb9ff1e32396d2bbe64ae71ec2ee19fce282dc9ae6ed",
+      "woff2": "src/web/OpenRunde-Regular.woff2",
+      "woff2_sha256": "350ed61163615f952901e75fc522f14361fc0a3e4d62038ba3ffff6c1fc5497b"
+    },
+    {
+      "style": "Medium",
+      "weight": 500,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable.ttf",
+      "source_sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "radius_at_90_degrees": 60.14789,
+      "measured_H_stem": 228.518433,
+      "glyphs": 2937,
+      "simple_glyphs_processed": 1034,
+      "glyphs_changed": 988,
+      "rounded_corners": 6432,
+      "normalized_rail_pairs": 65,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-Medium.ttf",
+      "ttf_sha256": "05acf444d8c59e5a9640fb0e3816bfe6a1850d21cb0b230c948f3de053286df9",
+      "woff2": "src/web/OpenRunde-Medium.woff2",
+      "woff2_sha256": "05dc6b9572b9b505f25a0ef99bf8b79857e34b0702ba4b88c056e58dc1dd65fb"
+    },
+    {
+      "style": "SemiBold",
+      "weight": 600,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable.ttf",
+      "source_sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "radius_at_90_degrees": 65.964959,
+      "measured_H_stem": 267.036865,
+      "glyphs": 2937,
+      "simple_glyphs_processed": 1034,
+      "glyphs_changed": 988,
+      "rounded_corners": 6432,
+      "normalized_rail_pairs": 56,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-SemiBold.ttf",
+      "ttf_sha256": "b545dbc93114b303fcc90d103250ed990d59befe7f331a8ba675d50de002dff8",
+      "woff2": "src/web/OpenRunde-SemiBold.woff2",
+      "woff2_sha256": "74a35b001f511fe5763863146466d60e367de43668093ca3860dccbdeef7448c"
+    },
+    {
+      "style": "Bold",
+      "weight": 700,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable.ttf",
+      "source_sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "radius_at_90_degrees": 76.012225,
+      "measured_H_stem": 305.555298,
+      "glyphs": 2937,
+      "simple_glyphs_processed": 1034,
+      "glyphs_changed": 988,
+      "rounded_corners": 6438,
+      "normalized_rail_pairs": 54,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-Bold.ttf",
+      "ttf_sha256": "6793d0659bc32c29aafb0799bed80a4becae230f5d4f48257dcf03b33c719e90",
+      "woff2": "src/web/OpenRunde-Bold.woff2",
+      "woff2_sha256": "f0e6ad16f83c1c74d7d42d0df78ed764cddcbb95750235d9eebd1179babd55dd"
+    },
+    {
+      "style": "ExtraBold",
+      "weight": 800,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable.ttf",
+      "source_sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "radius_at_90_degrees": 88.624088,
+      "measured_H_stem": 352.64209,
+      "glyphs": 2937,
+      "simple_glyphs_processed": 1034,
+      "glyphs_changed": 988,
+      "rounded_corners": 6446,
+      "normalized_rail_pairs": 54,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-ExtraBold.ttf",
+      "ttf_sha256": "b3e1b517438c48da2099f12db6a7eb62cb17b43e473d2414eea476f3be4414a2",
+      "woff2": "src/web/OpenRunde-ExtraBold.woff2",
+      "woff2_sha256": "9de62242d22d16aadb574960948e0f9af9af188aefbddd4de29f5fffb52b42c2"
+    },
+    {
+      "style": "Black",
+      "weight": 900,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable.ttf",
+      "source_sha256": "4989b125924991b90d05b2d16e0e388c48f7d5bb8b30539bbf9c755278d0ccaf",
+      "radius_at_90_degrees": 102.733614,
+      "measured_H_stem": 404.0,
+      "glyphs": 2937,
+      "simple_glyphs_processed": 1034,
+      "glyphs_changed": 990,
+      "rounded_corners": 6427,
+      "normalized_rail_pairs": 52,
+      "reverted_glyphs": [
+        "uni2B1C"
+      ],
+      "warnings": {
+        "uni2B1C": [
+          "added-ink-area=8.076"
+        ]
+      },
+      "ttf": "src/desktop/OpenRunde-Black.ttf",
+      "ttf_sha256": "615a2a0f0486efe367fefbd0c9bf50b9a3685b409b01327df07ea4897c38cbb4",
+      "woff2": "src/web/OpenRunde-Black.woff2",
+      "woff2_sha256": "6a9d147174ae73cb493256609b8afa65caa86ac9e9100ac1b20189dc975049aa"
+    },
+    {
+      "style": "Thin Italic",
+      "weight": 100,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable-Italic.woff2",
+      "source_sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "radius_at_90_degrees": 29.431415,
+      "measured_H_stem": 47.0,
+      "glyphs": 2901,
+      "simple_glyphs_processed": 1033,
+      "glyphs_changed": 983,
+      "rounded_corners": 6448,
+      "normalized_rail_pairs": 58,
+      "reverted_glyphs": [
+        "l.ss02",
+        "uni026C.ss02",
+        "iota",
+        "pi"
+      ],
+      "warnings": {
+        "l.ss02": [
+          "topology-changed"
+        ],
+        "uni026C.ss02": [
+          "topology-changed"
+        ],
+        "iota": [
+          "topology-changed"
+        ],
+        "pi": [
+          "topology-changed"
+        ]
+      },
+      "ttf": "src/desktop/OpenRunde-ThinItalic.ttf",
+      "ttf_sha256": "36146ec0d722a2a93db3895321db70298f4fb6f01c648ff2a524a6ed2ce0d7f4",
+      "woff2": "src/web/OpenRunde-ThinItalic.woff2",
+      "woff2_sha256": "3d00468988a134670123386bcf6a50f7a1af6cf30a63fb9bc9bdb09a84911542"
+    },
+    {
+      "style": "ExtraLight Italic",
+      "weight": 200,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable-Italic.woff2",
+      "source_sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "radius_at_90_degrees": 38.538321,
+      "measured_H_stem": 94.663757,
+      "glyphs": 2901,
+      "simple_glyphs_processed": 1033,
+      "glyphs_changed": 987,
+      "rounded_corners": 6496,
+      "normalized_rail_pairs": 70,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-ExtraLightItalic.ttf",
+      "ttf_sha256": "0ff749c6c469b0c1f90c22eb11f4b1eeeeadaf7760a36e4ee33580d4783ca6d7",
+      "woff2": "src/web/OpenRunde-ExtraLightItalic.woff2",
+      "woff2_sha256": "40227c4d40c447ce9c0e242f90a52ed13bb21450c94d7e14440f98728831f332"
+    },
+    {
+      "style": "Light Italic",
+      "weight": 300,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable-Italic.woff2",
+      "source_sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "radius_at_90_degrees": 46.965095,
+      "measured_H_stem": 142.336243,
+      "glyphs": 2901,
+      "simple_glyphs_processed": 1033,
+      "glyphs_changed": 987,
+      "rounded_corners": 6494,
+      "normalized_rail_pairs": 65,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-LightItalic.ttf",
+      "ttf_sha256": "b8dec391339d6cdd96fad7af062410eb181ef1841f8df6f4f453d50e7affc4cc",
+      "woff2": "src/web/OpenRunde-LightItalic.woff2",
+      "woff2_sha256": "86cee7b1db42b8cb9cc37f1823c0a4522f508e7b9ab2c68a2585b0d6da718c9c"
+    },
+    {
+      "style": "Italic",
+      "weight": 400,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable-Italic.woff2",
+      "source_sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "radius_at_90_degrees": 54.85503,
+      "measured_H_stem": 190.0,
+      "glyphs": 2901,
+      "simple_glyphs_processed": 1033,
+      "glyphs_changed": 987,
+      "rounded_corners": 6487,
+      "normalized_rail_pairs": 58,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-Italic.ttf",
+      "ttf_sha256": "84747cd1e1d9736171a6e3aec527406f0a3418b8b809ee99493d34153b6ca96e",
+      "woff2": "src/web/OpenRunde-Italic.woff2",
+      "woff2_sha256": "da3b593e38e7e324c93f6e7a19e1534c094c073868d53b377f10d0813f3385b3"
+    },
+    {
+      "style": "Medium Italic",
+      "weight": 500,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable-Italic.woff2",
+      "source_sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "radius_at_90_degrees": 60.147894,
+      "measured_H_stem": 228.518448,
+      "glyphs": 2901,
+      "simple_glyphs_processed": 1033,
+      "glyphs_changed": 987,
+      "rounded_corners": 6471,
+      "normalized_rail_pairs": 56,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-MediumItalic.ttf",
+      "ttf_sha256": "05b7539e6336f21edf99c9e09bd18b0453c2bf8aea036d4d768a51fb6f224b79",
+      "woff2": "src/web/OpenRunde-MediumItalic.woff2",
+      "woff2_sha256": "19244ed1cda06543d834f4d785613b6891677c63c1bc6dd4dc7aabac0215e8c1"
+    },
+    {
+      "style": "SemiBold Italic",
+      "weight": 600,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable-Italic.woff2",
+      "source_sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "radius_at_90_degrees": 65.964959,
+      "measured_H_stem": 267.036865,
+      "glyphs": 2901,
+      "simple_glyphs_processed": 1033,
+      "glyphs_changed": 987,
+      "rounded_corners": 6474,
+      "normalized_rail_pairs": 54,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-SemiBoldItalic.ttf",
+      "ttf_sha256": "646c9d54c4b5b53a92154e916e982eed84d20e5068e5b389bf78621d10731637",
+      "woff2": "src/web/OpenRunde-SemiBoldItalic.woff2",
+      "woff2_sha256": "1301b24caa85b1af682d0323c10a732fe36c0b1726dad1ab76fe8fe8cad17b42"
+    },
+    {
+      "style": "Bold Italic",
+      "weight": 700,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable-Italic.woff2",
+      "source_sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "radius_at_90_degrees": 76.012221,
+      "measured_H_stem": 305.555281,
+      "glyphs": 2901,
+      "simple_glyphs_processed": 1033,
+      "glyphs_changed": 987,
+      "rounded_corners": 6472,
+      "normalized_rail_pairs": 51,
+      "reverted_glyphs": [],
+      "warnings": {},
+      "ttf": "src/desktop/OpenRunde-BoldItalic.ttf",
+      "ttf_sha256": "4991cb47f40ccc01425ea5ac53b021ff425f30f831352ad3d61ad6c10f1f847e",
+      "woff2": "src/web/OpenRunde-BoldItalic.woff2",
+      "woff2_sha256": "ead48f54f0dce74460dcd06c9aeaf0b94f8ea689397ecc77c730245a12f49649"
+    },
+    {
+      "style": "ExtraBold Italic",
+      "weight": 800,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable-Italic.woff2",
+      "source_sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "radius_at_90_degrees": 88.624088,
+      "measured_H_stem": 352.64209,
+      "glyphs": 2901,
+      "simple_glyphs_processed": 1033,
+      "glyphs_changed": 986,
+      "rounded_corners": 6480,
+      "normalized_rail_pairs": 48,
+      "reverted_glyphs": [
+        "s.sups"
+      ],
+      "warnings": {
+        "s.sups": [
+          "topology-changed"
+        ]
+      },
+      "ttf": "src/desktop/OpenRunde-ExtraBoldItalic.ttf",
+      "ttf_sha256": "9d3601caf1881a3317412f45466093ec1649fc69502f9352e7410ff83606c053",
+      "woff2": "src/web/OpenRunde-ExtraBoldItalic.woff2",
+      "woff2_sha256": "6f583b55a800102d3aebe3a50bf4bf42abbfbb3b5225c95a970550be5eeb4965"
+    },
+    {
+      "style": "Black Italic",
+      "weight": 900,
+      "source": "/Users/laurids/Documents/Codex/2026-07-10/test-can-you-hear-me-test/work/inter/docs/font-files/InterVariable-Italic.woff2",
+      "source_sha256": "e564f652916db6c139570fefb9524a77c4d48f30c92928de9db19b6b5c7a262a",
+      "radius_at_90_degrees": 102.733614,
+      "measured_H_stem": 404.0,
+      "glyphs": 2901,
+      "simple_glyphs_processed": 1033,
+      "glyphs_changed": 989,
+      "rounded_corners": 6481,
+      "normalized_rail_pairs": 50,
+      "reverted_glyphs": [
+        "uni2B1C"
+      ],
+      "warnings": {
+        "uni2B1C": [
+          "added-ink-area=13.740"
+        ]
+      },
+      "ttf": "src/desktop/OpenRunde-BlackItalic.ttf",
+      "ttf_sha256": "43ee095b9ee402e8dc1321606495e441a89d4cbef38d8ea76d8f7de931d9a99c",
+      "woff2": "src/web/OpenRunde-BlackItalic.woff2",
+      "woff2_sha256": "4db225e07fcd04ef21357514bbb3cf400285d1b0414359e4708a05feecafc418"
+    }
+  ]
+}
