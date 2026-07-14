@@ -32,6 +32,9 @@ Desktop TTF files are in [`src/desktop`](src/desktop). Matching WOFF2 files
 and ready-to-use CSS are in [`src/web`](src/web). Individual release proofs
 for every face are in [`proofs/v2`](proofs/v2).
 
+The focused [composite overlap proof](proofs/v2/diagnostics/winding-overlaps.png)
+compares Inter with every Open Runde face for joined and overlapping glyphs.
+
 ## Design and source
 
 Version 2.0 is rebuilt from the current Inter 4.001 variable sources at the

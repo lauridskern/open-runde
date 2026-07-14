@@ -21,8 +21,9 @@ fallbacks are recorded in `export-manifest.json`.
 
 The exporter preserves composite glyphs and OpenType layout tables. It applies
 rounding to simple outlines, converts accepted cubic blends back to quadratic
-TrueType contours, recalculates bounds and font metrics, and renders proofs
-from the finished TTF files.
+TrueType contours, normalizes outer contours to clockwise TrueType winding,
+recalculates bounds and font metrics, and renders proofs from the finished TTF
+files.
 
 Run `tools/build_v2_export.py --help` for the export interface. The reviewed
 rounding core is passed explicitly with `--rounding-core` so the exact geometry

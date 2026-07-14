@@ -140,7 +140,11 @@ def radius_for(weight: int, stem: float, base_stem: float) -> float:
 
 def contour_infos_to_glyph(infos) -> object:
     target = TTGlyphPen(None)
-    pen = Cu2QuPen(target, max_err=0.75, reverse_direction=False)
+    # The rounding core emits PostScript-style contour winding. TrueType uses
+    # the opposite convention. Leaving the direction unchanged makes rebuilt
+    # glyphs subtract from untouched components at overlaps (for example ø and
+    # œ), even though each standalone glyph still looks correct.
+    pen = Cu2QuPen(target, max_err=0.75, reverse_direction=True)
     for info in infos:
         if not info.segments:
             continue
@@ -456,6 +460,81 @@ def render_proof(path: Path, output: Path, weight: int, weight_name: str, italic
     canvas.save(output, "PNG", optimize=True)
 
 
+def render_winding_proof(
+    roman_source: Path,
+    italic_source: Path,
+    desktop_root: Path,
+    output: Path,
+) -> None:
+    """Render every face beside Inter for overlap and winding inspection."""
+    width, height, supersample = 2600, 2500, 2
+    canvas = Image.new("RGB", (width * supersample, height * supersample), "white")
+    draw = ImageDraw.Draw(canvas)
+    navy = (15, 23, 42)
+    muted = (86, 96, 113)
+    grid = (226, 232, 240)
+    sample = "Ø ø Ǿ ǿ  Œ œ  Ǫ ǫ"
+    regular_path = desktop_root / "OpenRunde-Regular.ttf"
+    title_font = ImageFont.truetype(str(regular_path), size=62 * supersample)
+    draw.text(
+        (70 * supersample, 38 * supersample),
+        "Composite overlap and winding proof",
+        font=title_font,
+        fill=navy,
+    )
+    draw.text(
+        (72 * supersample, 116 * supersample),
+        "Inter 4.001 source reference followed by every Open Runde 2.000 face",
+        font=ImageFont.truetype(str(regular_path), size=27 * supersample),
+        fill=muted,
+    )
+
+    rows: List[Tuple[str, Path, str, Path]] = [
+        ("Inter Regular source", roman_source, "Inter Italic source", italic_source)
+    ]
+    rows.extend(
+        (
+            f"Open Runde {weight_name}",
+            desktop_root / f"{face_names(weight, weight_name, False)['postscript']}.ttf",
+            f"Open Runde {weight_name} Italic",
+            desktop_root / f"{face_names(weight, weight_name, True)['postscript']}.ttf",
+        )
+        for weight, weight_name, _ in WEIGHTS
+    )
+
+    top, row_height, column_width = 185, 228, width // 2
+    draw.line(
+        (column_width * supersample, top * supersample, column_width * supersample, height * supersample),
+        fill=grid,
+        width=2 * supersample,
+    )
+    for row_index, (left_label, left_path, right_label, right_path) in enumerate(rows):
+        y = top + row_index * row_height
+        if row_index:
+            draw.line(
+                (70 * supersample, y * supersample, (width - 70) * supersample, y * supersample),
+                fill=grid,
+                width=2 * supersample,
+            )
+        for column, (label, path) in enumerate(
+            ((left_label, left_path), (right_label, right_path))
+        ):
+            x = 72 + column * column_width
+            label_font = ImageFont.truetype(str(path), size=25 * supersample)
+            sample_font = fit_font(
+                path,
+                sample,
+                112 * supersample,
+                (column_width - 145) * supersample,
+            )
+            draw.text((x * supersample, (y + 18) * supersample), label, font=label_font, fill=muted)
+            draw.text((x * supersample, (y + 62) * supersample), sample, font=sample_font, fill=navy)
+
+    canvas = canvas.resize((width, height), Image.Resampling.LANCZOS)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    canvas.save(output, "PNG", optimize=True)
+
+
 def write_css(output_root: Path) -> None:
     blocks: List[str] = ["/* Open Runde 2.000 static web family */"]
     for weight, weight_name, _ in WEIGHTS:
@@ -553,6 +632,13 @@ def main() -> int:
         "faces": records,
     }
     manifest_path.write_text(json.dumps(manifest, indent=2) + "\n", encoding="utf-8")
+    if args.style == "all":
+        render_winding_proof(
+            args.roman_font,
+            args.italic_font,
+            args.output_root / "desktop",
+            args.proof_root / "diagnostics" / "winding-overlaps.png",
+        )
     print(f"Wrote {len(records)} faces and {len(records)} proofs", flush=True)
     return 0
 

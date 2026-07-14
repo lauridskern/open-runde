@@ -17,6 +17,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DESKTOP = ROOT / "src" / "desktop"
 WEB = ROOT / "src" / "web"
 PROOFS = ROOT / "proofs" / "v2"
+WINDING_PROOF = PROOFS / "diagnostics" / "winding-overlaps.png"
 WEIGHTS: Tuple[Tuple[int, str, int], ...] = (
     (100, "Thin", 2),
     (200, "ExtraLight", 3),
@@ -74,6 +75,24 @@ def face_names(weight: int, weight_name: str, italic: bool) -> Dict[str, str]:
 def expect(condition: bool, message: str, errors: List[str]) -> None:
     if not condition:
         errors.append(message)
+
+
+def dominant_contour_area(font: TTFont, glyph_name: str) -> float:
+    """Return the signed area of a simple glyph's largest contour."""
+    glyph = font["glyf"][glyph_name]
+    coordinates, end_points, _ = glyph.getCoordinates(font["glyf"])
+    start = 0
+    areas: List[float] = []
+    for end in end_points:
+        points = coordinates[start : end + 1]
+        area = sum(
+            points[index][0] * points[(index + 1) % len(points)][1]
+            - points[(index + 1) % len(points)][0] * points[index][1]
+            for index in range(len(points))
+        ) / 2.0
+        areas.append(area)
+        start = end + 1
+    return max(areas, key=abs)
 
 
 def main() -> int:
@@ -136,6 +155,18 @@ def main() -> int:
             expect(all(tag in font for tag in ("GDEF", "GPOS", "GSUB", "STAT")), f"{ttf_path.name}: layout/STAT tables", errors)
             expect(not any(tag in font for tag in ("fvar", "gvar", "avar", "HVAR", "MVAR")), f"{ttf_path.name}: static font has variation tables", errors)
             expect(len(font.getGlyphOrder()) == (2901 if italic else 2937), f"{ttf_path.name}: glyph count", errors)
+            non_clockwise = [
+                glyph_name
+                for glyph_name in font.getGlyphOrder()
+                if not font["glyf"][glyph_name].isComposite()
+                and font["glyf"][glyph_name].numberOfContours > 0
+                and dominant_contour_area(font, glyph_name) >= 0
+            ]
+            expect(
+                not non_clockwise,
+                f"{ttf_path.name}: non-clockwise outer contours {non_clockwise[:8]}",
+                errors,
+            )
             expect(PROOF_CHARACTERS.issubset({chr(codepoint) for codepoint in font.getBestCmap()}), f"{ttf_path.name}: proof coverage", errors)
             expect(web.flavor == "woff2", f"{web_path.name}: flavor", errors)
             expect(web["name"].getDebugName(6) == names["ps"], f"{web_path.name}: PostScript name", errors)
@@ -164,6 +195,11 @@ def main() -> int:
     expect(len(list(WEB.glob("*.woff2"))) == 18, "web WOFF2 count", errors)
     expect(not list(WEB.glob("*.woff")), "obsolete WOFF1 files remain", errors)
     expect(len(list(PROOFS.glob("*.png"))) == 18, "proof count", errors)
+    expect(WINDING_PROOF.exists(), "missing focused winding proof", errors)
+    if WINDING_PROOF.exists():
+        with Image.open(WINDING_PROOF) as proof:
+            expect(proof.size == (2600, 2500), "focused winding proof dimensions", errors)
+            expect(proof.mode == "RGB", "focused winding proof color mode", errors)
     expect(not (ROOT / "src" / "glyphs").exists(), "obsolete glyphs directory remains", errors)
     css = (WEB / "open-runde.css").read_text()
     expect(css.count("@font-face") == 18, "CSS face count", errors)
@@ -176,7 +212,7 @@ def main() -> int:
             print(f"- {error}")
         return 1
     print("PASS: 18 TTFs, 18 WOFF2 files, and 18 proofs validated")
-    print("PASS: metadata, style linking, coverage, tables, hashes, and CSS validated")
+    print("PASS: metadata, style linking, winding, coverage, tables, hashes, proofs, and CSS validated")
     return 0
 
 
