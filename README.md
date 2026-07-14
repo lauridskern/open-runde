@@ -10,30 +10,34 @@ confusion with the original Inter family and trademark.
 
 [**Download the latest Open Runde release…**](https://github.com/lauridskern/open-runde/releases/latest)
 
-![Open Runde Regular release proof](proofs/v2/OpenRunde-Regular.png)
+<br>
+
+[![Sample](misc/readme/intro.png)]()
 
 ## Family
 
 Open Runde 2.0 contains nine weights, each with a true italic counterpart.
 
-| Upright | Italic | Weight class |
-| --- | --- | ---: |
-| Thin | Thin Italic | 100 |
-| ExtraLight | ExtraLight Italic | 200 |
-| Light | Light Italic | 300 |
-| Regular | Italic | 400 |
-| Medium | Medium Italic | 500 |
-| SemiBold | SemiBold Italic | 600 |
-| Bold | Bold Italic | 700 |
-| ExtraBold | ExtraBold Italic | 800 |
-| Black | Black Italic | 900 |
+| Upright    | Italic            | Weight class |
+| ---------- | ----------------- | -----------: |
+| Thin       | Thin Italic       |          100 |
+| ExtraLight | ExtraLight Italic |          200 |
+| Light      | Light Italic      |          300 |
+| Regular    | Italic            |          400 |
+| Medium     | Medium Italic     |          500 |
+| SemiBold   | SemiBold Italic   |          600 |
+| Bold       | Bold Italic       |          700 |
+| ExtraBold  | ExtraBold Italic  |          800 |
+| Black      | Black Italic      |          900 |
 
 Desktop TTF files are in [`src/desktop`](src/desktop). Matching WOFF2 files
 and ready-to-use CSS are in [`src/web`](src/web). Individual release proofs
-for every face are in [`proofs/v2`](proofs/v2).
 
-The focused [composite overlap proof](proofs/v2/diagnostics/winding-overlaps.png)
-compares Inter with every Open Runde face for joined and overlapping glyphs.
+## Questions
+
+- I found a weird-looking glyph -> Please open an issue and I'll try to fix it
+- Can you make it a variable font? -> Playing around with but cannot promise anything
+- Can I legally use Open Runde for my purpose? -> Most likely yes! Open Runde is free and open source. The license is the same as Inter's ([Read the license](LICENSE.txt) for details.)
 
 ## Design and source
 
@@ -47,21 +51,6 @@ The release keeps Inter's glyph coverage, components, kerning, anchors, and
 OpenType layout features. Build provenance and checksums are recorded in
 [`src/export-manifest.json`](src/export-manifest.json); export details are in
 [`src/BUILD.md`](src/BUILD.md).
-
-## Web use
-
-Copy `src/web` and include the generated stylesheet:
-
-```html
-<link rel="stylesheet" href="open-runde.css">
-```
-
-```css
-body {
-  font-family: "Open Runde", sans-serif;
-  font-weight: 400;
-}
-```
 
 ## License
 
