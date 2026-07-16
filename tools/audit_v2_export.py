@@ -6,6 +6,7 @@ from __future__ import annotations
 import hashlib
 import io
 import json
+import math
 from pathlib import Path
 from typing import Dict, List, Tuple
 
@@ -18,6 +19,19 @@ DESKTOP = ROOT / "src" / "desktop"
 WEB = ROOT / "src" / "web"
 PROOFS = ROOT / "proofs" / "v2"
 WINDING_PROOF = PROOFS / "diagnostics" / "winding-overlaps.png"
+TERMINAL_PROOF = PROOFS / "diagnostics" / "heavy-terminals.png"
+ALGORITHM = "openrunde-reference-fit-v11-family-support-intersection-unfillet"
+TANGENT_SOLVER_TIERS = (
+    "locked",
+    "joint",
+    "sparse-1",
+    "sparse-2",
+    "sparse-4",
+    "sparse-5",
+    "sparse-6",
+    "full-4",
+    "sparse-7",
+)
 WEIGHTS: Tuple[Tuple[int, str, int], ...] = (
     (100, "Thin", 2),
     (200, "ExtraLight", 3),
@@ -33,7 +47,18 @@ PROOF_CHARACTERS = set(
     "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
     ".,:;!?…‘’“”\"'-–—_/\\|@#&%*+−=<>$€£¥¢₽₹₩©®™°•·()[]{}‹›«»^~"
     "←↑→↓✓ÀÁÂÃÄÅÆÇÐÈÉÊËÌÍÎÏÑÒÓÔÕÖØŒŠÞÜÝŽ"
-    "àáâãäåæçðèéêëìíîïñòóôõöøœßšþüýÿž"
+    "àáâãäåæçðèéêëìíîïñòóôõöøœßšþüýÿžƴʂ"
+)
+PROOF_LINES: Tuple[str, ...] = (
+    "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
+    "abcdefghijklmnopqrstuvwxyz",
+    "0123456789  0123456789",
+    ". , : ; ! ? …  ' \" ‘ ’ “ ”  - – —  _ / \\ |  @ # & % * + − = < >",
+    "$ € £ ¥ ¢ ₽ ₹ ₩   © ® ™   ° • ·",
+    "( )  [ ]  { }   ‹ ›  « »   ^ ~   ← ↑ → ↓   ✓",
+    "À Á Â Ã Ä Å Æ Ç Ð È É Ê Ë Ì Í Î Ï Ñ Ò Ó Ô Õ Ö Ø Œ Š Þ Ü Ý Ž",
+    "à á â ã ä å æ ç ð è é ê ë ì í î ï ñ ò ó ô õ ö ø œ ß š þ ü ý ÿ ž",
+    "AMNVWXYZ QRGJK   rfkgzxwvy ƴ ʂ   4 7 6 9",
 )
 
 
@@ -41,6 +66,21 @@ def sha256(path: Path) -> str:
     digest = hashlib.sha256()
     digest.update(path.read_bytes())
     return digest.hexdigest()
+
+
+def family_input_sha256(records: List[Dict[str, object]]) -> str:
+    payload = [
+        {
+            "style": record.get("style"),
+            "ttf_sha256": record.get("ttf_sha256"),
+            "source_sha256": record.get("source_sha256"),
+            "proof_sha256": record.get("proof_sha256"),
+        }
+        for record in records
+    ]
+    return hashlib.sha256(
+        json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    ).hexdigest()
 
 
 def face_names(weight: int, weight_name: str, italic: bool) -> Dict[str, str]:
@@ -95,13 +135,80 @@ def dominant_contour_area(font: TTFont, glyph_name: str) -> float:
     return max(areas, key=abs)
 
 
+def raw_join_angle(coordinates, previous: int, point: int, following: int) -> float:
+    incoming = (
+        coordinates[point][0] - coordinates[previous][0],
+        coordinates[point][1] - coordinates[previous][1],
+    )
+    outgoing = (
+        coordinates[following][0] - coordinates[point][0],
+        coordinates[following][1] - coordinates[point][1],
+    )
+    incoming_length = math.hypot(*incoming)
+    outgoing_length = math.hypot(*outgoing)
+    if incoming_length < 1.0 or outgoing_length < 1.0:
+        return math.inf
+    return math.degrees(
+        math.atan2(
+            abs(incoming[0] * outgoing[1] - incoming[1] * outgoing[0]),
+            incoming[0] * outgoing[0] + incoming[1] * outgoing[1],
+        )
+    )
+
+
 def main() -> int:
     errors: List[str] = []
     manifest = json.loads((ROOT / "src" / "export-manifest.json").read_text())
-    manifest_faces = {face["style"]: face for face in manifest["faces"]}
+    raw_manifest_faces = manifest.get("faces", [])
+    expected_styles = [
+        face_names(weight, weight_name, italic)["actual"]
+        for italic in (False, True)
+        for weight, weight_name, _ in WEIGHTS
+    ]
+    manifest_styles = [face.get("style") for face in raw_manifest_faces]
+    expect(manifest.get("family") == "Open Runde", "manifest family", errors)
+    expect(manifest.get("version") == "2.000", "manifest version", errors)
+    expect(manifest.get("algorithm") == ALGORITHM, "manifest algorithm", errors)
+    expect(manifest.get("optical_size") == 14, "manifest optical size", errors)
+    expect(len(raw_manifest_faces) == 18, "manifest face count", errors)
+    expect(len(set(manifest_styles)) == 18, "manifest styles are unique", errors)
+    expect(manifest_styles == expected_styles, "manifest face order/styles", errors)
+    manifest_faces = {
+        face["style"]: face
+        for face in raw_manifest_faces
+        if isinstance(face, dict) and isinstance(face.get("style"), str)
+    }
+    fingerprints = manifest.get("build_fingerprints", {})
+    expected_builder_sha = sha256(ROOT / "tools" / "build_v2_export.py")
+    expected_tangent_sha = sha256(ROOT / "tools" / "tangent_quantization.py")
+    expect(
+        fingerprints.get("builder_sha256") == expected_builder_sha,
+        "manifest builder fingerprint",
+        errors,
+    )
+    expect(
+        fingerprints.get("tangent_quantization_sha256") == expected_tangent_sha,
+        "manifest tangent solver fingerprint",
+        errors,
+    )
+    expect(
+        isinstance(fingerprints.get("rounding_core_sha256"), str)
+        and len(fingerprints["rounding_core_sha256"]) == 64,
+        "manifest rounding-core fingerprint",
+        errors,
+    )
+    expected_proof_text_sha = hashlib.sha256(
+        "\n".join(PROOF_LINES).encode("utf-8")
+    ).hexdigest()
+    expect(
+        manifest.get("proof_text_sha256") == expected_proof_text_sha,
+        "manifest proof text fingerprint",
+        errors,
+    )
     expected_ps: List[str] = []
     roman_orders: List[List[str]] = []
     italic_orders: List[List[str]] = []
+    source_hashes = {False: set(), True: set()}
 
     for italic in (False, True):
         for weight, weight_name, panose_weight in WEIGHTS:
@@ -185,21 +292,195 @@ def main() -> int:
             record = manifest_faces.get(names["actual"])
             expect(record is not None, f"{ttf_path.name}: manifest record", errors)
             if record:
-                expect(record["ttf_sha256"] == sha256(ttf_path), f"{ttf_path.name}: manifest SHA", errors)
-                expect(record["woff2_sha256"] == sha256(web_path), f"{web_path.name}: manifest SHA", errors)
+                expect(record.get("weight") == weight, f"{ttf_path.name}: manifest weight", errors)
+                expected_source = "InterVariable-Italic.woff2" if italic else "InterVariable.ttf"
+                expect(record.get("source") == expected_source, f"{ttf_path.name}: source label", errors)
+                source_hash = record.get("source_sha256")
+                expect(isinstance(source_hash, str) and len(source_hash) == 64, f"{ttf_path.name}: source SHA", errors)
+                if isinstance(source_hash, str):
+                    source_hashes[italic].add(source_hash)
+                expect(record.get("build_fingerprints") == fingerprints, f"{ttf_path.name}: build fingerprints", errors)
+                expect(record.get("ttf") == f"src/desktop/{ttf_path.name}", f"{ttf_path.name}: manifest TTF path", errors)
+                expect(record.get("woff2") == f"src/web/{web_path.name}", f"{web_path.name}: manifest WOFF2 path", errors)
+                expect(record.get("proof") == f"proofs/v2/{proof_path.name}", f"{proof_path.name}: manifest proof path", errors)
+                expect(record.get("ttf_sha256") == sha256(ttf_path), f"{ttf_path.name}: manifest SHA", errors)
+                expect(record.get("woff2_sha256") == sha256(web_path), f"{web_path.name}: manifest SHA", errors)
+                if proof_path.exists():
+                    expect(record.get("proof_sha256") == sha256(proof_path), f"{proof_path.name}: manifest SHA", errors)
+                expect(record.get("tangent_conversion_failures") == 0, f"{ttf_path.name}: tangent conversion failures", errors)
+                expect(record.get("tangent_curve_join_candidates", 0) > 0, f"{ttf_path.name}: tangent coverage is empty", errors)
+                expect(
+                    record.get("tangent_joins_checked", -1)
+                    + record.get("tangent_lattice_degenerate_joins", -1)
+                    == record.get("tangent_curve_join_candidates"),
+                    f"{ttf_path.name}: tangent coverage accounting",
+                    errors,
+                )
+                expect(record.get("tangent_exact_lattice_reductions", -1) >= 0, f"{ttf_path.name}: exact lattice reduction accounting", errors)
+                expect(record.get("tangent_lattice_degenerate_joins", -1) >= 0, f"{ttf_path.name}: lattice-degenerate join accounting", errors)
+                degenerate_records = record.get(
+                    "tangent_lattice_degenerate_join_records", {}
+                )
+                expect(
+                    isinstance(degenerate_records, dict),
+                    f"{ttf_path.name}: lattice-degenerate records",
+                    errors,
+                )
+                valid_degenerate_count = 0
+                if isinstance(degenerate_records, dict):
+                    for glyph_name, triples in degenerate_records.items():
+                        glyph_valid = glyph_name in font["glyf"]
+                        expect(glyph_valid, f"{ttf_path.name}: unknown lattice-degenerate glyph {glyph_name}", errors)
+                        if not glyph_valid:
+                            continue
+                        glyph = font["glyf"][glyph_name]
+                        expect(not glyph.isComposite(), f"{ttf_path.name}: composite lattice-degenerate glyph {glyph_name}", errors)
+                        if glyph.isComposite():
+                            continue
+                        coordinates, end_points, flags = glyph.getCoordinates(font["glyf"])
+                        neighbors = {}
+                        contour_start = 0
+                        for contour_end in end_points:
+                            contour_size = contour_end - contour_start + 1
+                            for point_index in range(contour_start, contour_end + 1):
+                                offset = point_index - contour_start
+                                neighbors[point_index] = (
+                                    contour_start + (offset - 1) % contour_size,
+                                    contour_start + (offset + 1) % contour_size,
+                                )
+                            contour_start = contour_end + 1
+                        if not isinstance(triples, list):
+                            expect(False, f"{ttf_path.name}: invalid lattice-degenerate records for {glyph_name}", errors)
+                            continue
+                        for triple in triples:
+                            valid = (
+                                isinstance(triple, list)
+                                and len(triple) == 3
+                                and all(type(index) is int for index in triple)
+                            )
+                            if valid:
+                                previous, point, following = triple
+                                valid = (
+                                    min(triple) >= 0
+                                    and max(triple) < len(coordinates)
+                                    and bool(flags[point] & 1)
+                                    and neighbors.get(point) == (previous, following)
+                                    and (
+                                        coordinates[previous] == coordinates[point]
+                                        or coordinates[point] == coordinates[following]
+                                    )
+                                )
+                            expect(valid, f"{ttf_path.name}: invalid lattice-degenerate join {glyph_name} {triple}", errors)
+                            valid_degenerate_count += int(valid)
+                expect(
+                    valid_degenerate_count
+                    == record.get("tangent_lattice_degenerate_joins"),
+                    f"{ttf_path.name}: lattice-degenerate record count",
+                    errors,
+                )
+                expect(record.get("max_smooth_join_angle", 180) <= 0.600001, f"{ttf_path.name}: smooth-join angle", errors)
+                expect(record.get("max_tangent_direction_shift", 180) <= 45.000001, f"{ttf_path.name}: tangent direction shift", errors)
+                expect(record.get("max_tangent_regular_direction_shift", 180) <= 6.000001, f"{ttf_path.name}: regular-handle direction shift", errors)
+                expect(record.get("max_tangent_micro_direction_shift", 180) <= 45.000001, f"{ttf_path.name}: micro-handle direction shift", errors)
+                expect(record.get("max_tangent_on_curve_move", 180) <= 7.000001, f"{ttf_path.name}: on-curve tangent movement", errors)
+                expect(record.get("max_tangent_control_move", 180) <= 9.000001, f"{ttf_path.name}: tangent control movement", errors)
+                solver_tiers = record.get("tangent_solver_tiers", {})
+                expect(
+                    sum(solver_tiers.get(tier, -10_000) for tier in TANGENT_SOLVER_TIERS)
+                    == record.get("glyphs_changed"),
+                    f"{ttf_path.name}: tangent solver-tier accounting",
+                    errors,
+                )
+                regression = record.get("tangent_regression_joins", {})
+                expect(set(regression) == {"e", "c", "s"}, f"{ttf_path.name}: tangent regression coverage", errors)
+                for character in ("e", "c", "s"):
+                    triples = regression.get(character, [])
+                    glyph_name = font.getBestCmap()[ord(character)]
+                    coordinates, end_points, flags = font["glyf"][glyph_name].getCoordinates(font["glyf"])
+                    neighbors = {}
+                    contour_start = 0
+                    for contour_end in end_points:
+                        contour_size = contour_end - contour_start + 1
+                        for index in range(contour_start, contour_end + 1):
+                            offset = index - contour_start
+                            neighbors[index] = (
+                                contour_start + (offset - 1) % contour_size,
+                                contour_start + (offset + 1) % contour_size,
+                            )
+                        contour_start = contour_end + 1
+                    valid_triples = [
+                        (previous, point, following)
+                        for previous, point, following in triples
+                        if min(previous, point, following) >= 0
+                        and max(previous, point, following) < len(coordinates)
+                        and flags[point] & 1
+                        and neighbors.get(point) == (previous, following)
+                    ]
+                    angles = [
+                        raw_join_angle(coordinates, previous, point, following)
+                        for previous, point, following in valid_triples
+                    ]
+                    expect(len(angles) == len(triples) and bool(angles), f"{ttf_path.name}: {character} raw tangent indices", errors)
+                    expect(max(angles, default=math.inf) <= 0.600001, f"{ttf_path.name}: {character} raw tangent angle", errors)
 
     expect(all(order == roman_orders[0] for order in roman_orders[1:]), "upright glyph orders differ", errors)
     expect(all(order == italic_orders[0] for order in italic_orders[1:]), "italic glyph orders differ", errors)
-    expect(len(list(DESKTOP.glob("*.ttf"))) == 18, "desktop TTF count", errors)
-    expect(not list(DESKTOP.glob("*.otf")), "obsolete OTF files remain", errors)
-    expect(len(list(WEB.glob("*.woff2"))) == 18, "web WOFF2 count", errors)
-    expect(not list(WEB.glob("*.woff")), "obsolete WOFF1 files remain", errors)
-    expect(len(list(PROOFS.glob("*.png"))) == 18, "proof count", errors)
+    expect(len(source_hashes[False]) == 1, "upright source hashes differ", errors)
+    expect(len(source_hashes[True]) == 1, "italic source hashes differ", errors)
+    expected_ttf_files = {f"{postscript}.ttf" for postscript in expected_ps}
+    expected_woff2_files = {f"{postscript}.woff2" for postscript in expected_ps}
+    expected_proof_files = {f"{postscript}.png" for postscript in expected_ps}
+    expect(
+        {path.name for path in DESKTOP.iterdir() if path.is_file()}
+        == expected_ttf_files,
+        "desktop release file set",
+        errors,
+    )
+    expect(
+        {path.name for path in WEB.iterdir() if path.is_file()}
+        == expected_woff2_files | {"open-runde.css"},
+        "web release file set",
+        errors,
+    )
+    expect(
+        {path.name for path in PROOFS.iterdir() if path.is_file()}
+        == expected_proof_files,
+        "proof file set",
+        errors,
+    )
+    expected_family_fingerprint = family_input_sha256(raw_manifest_faces)
+    expect(
+        manifest.get("family_input_sha256") == expected_family_fingerprint,
+        "manifest family-input fingerprint",
+        errors,
+    )
+    expected_diagnostic_names = {"winding-overlaps.png", "heavy-terminals.png"}
+    diagnostics = manifest.get("diagnostics", {})
+    expect(isinstance(diagnostics, dict), "manifest diagnostics object", errors)
+    if not isinstance(diagnostics, dict):
+        diagnostics = {}
+    expect(set(diagnostics) == expected_diagnostic_names, "manifest diagnostics", errors)
+    diagnostic_files = {
+        path.name for path in (PROOFS / "diagnostics").glob("*") if path.is_file()
+    }
+    expect(diagnostic_files == expected_diagnostic_names, "diagnostic proof file set", errors)
+    for filename in expected_diagnostic_names:
+        path = PROOFS / "diagnostics" / filename
+        record = diagnostics.get(filename, {})
+        expect(record.get("path") == f"proofs/v2/diagnostics/{filename}", f"{filename}: manifest path", errors)
+        if path.exists():
+            expect(record.get("sha256") == sha256(path), f"{filename}: manifest SHA", errors)
+        expect(record.get("family_input_sha256") == expected_family_fingerprint, f"{filename}: family-input fingerprint", errors)
     expect(WINDING_PROOF.exists(), "missing focused winding proof", errors)
     if WINDING_PROOF.exists():
         with Image.open(WINDING_PROOF) as proof:
             expect(proof.size == (2600, 2500), "focused winding proof dimensions", errors)
             expect(proof.mode == "RGB", "focused winding proof color mode", errors)
+    expect(TERMINAL_PROOF.exists(), "missing focused terminal proof", errors)
+    if TERMINAL_PROOF.exists():
+        with Image.open(TERMINAL_PROOF) as proof:
+            expect(proof.size == (2600, 1900), "focused terminal proof dimensions", errors)
+            expect(proof.mode == "RGB", "focused terminal proof color mode", errors)
     expect(not (ROOT / "src" / "glyphs").exists(), "obsolete glyphs directory remains", errors)
     css = (WEB / "open-runde.css").read_text()
     expect(css.count("@font-face") == 18, "CSS face count", errors)
