@@ -308,6 +308,20 @@ def main() -> int:
                 if proof_path.exists():
                     expect(record.get("proof_sha256") == sha256(proof_path), f"{proof_path.name}: manifest SHA", errors)
                 expect(record.get("tangent_conversion_failures") == 0, f"{ttf_path.name}: tangent conversion failures", errors)
+                safe_fallbacks = record.get(
+                    "conversion_safe_fallback_glyphs", []
+                )
+                expect(
+                    isinstance(safe_fallbacks, list)
+                    and len(safe_fallbacks) == len(set(safe_fallbacks))
+                    and all(
+                        isinstance(glyph_name, str)
+                        and glyph_name in font["glyf"]
+                        for glyph_name in safe_fallbacks
+                    ),
+                    f"{ttf_path.name}: conversion-safe fallback records",
+                    errors,
+                )
                 expect(record.get("tangent_curve_join_candidates", 0) > 0, f"{ttf_path.name}: tangent coverage is empty", errors)
                 expect(
                     record.get("tangent_joins_checked", -1)

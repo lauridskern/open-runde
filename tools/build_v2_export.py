@@ -92,6 +92,19 @@ WEIGHTS: Tuple[Tuple[int, str, int], ...] = (
     (800, "ExtraBold", 9),
     (900, "Black", 10),
 )
+
+# The enhanced mixed-curve treatment is deliberately conservative, but a
+# small number of very complex outlines can still exceed the bounded
+# TrueType tangent solver after gaining an extra smooth join.  In that case,
+# retry the same glyph with the previously released smoothing behavior.  A
+# successful retry preserves its v2 rounded outline instead of silently
+# dropping all the way back to untouched Inter geometry.
+CONVERSION_SAFE_ROUNDING_SETTINGS = {
+    "IGNORE_MICRO_CURVE_KINKS_FOR_ROOM": False,
+    "MIXED_FALLBACK_LINE_CURVATURE_LIMIT": math.inf,
+    "CURVATURE_RAMP_EXTENDED_HANDLE_FACTORS": (),
+    "CURVATURE_RAMP_EXTENDED_DEVIATION_LIMIT": 0.22,
+}
 PROOF_LINES: Tuple[str, ...] = (
     "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
     "abcdefghijklmnopqrstuvwxyz",
@@ -130,6 +143,25 @@ def load_rounding_core(path: Path):
     sys.modules[spec.name] = module
     spec.loader.exec_module(module)
     return module
+
+
+def conversion_safe_rounding_retry(core, callback):
+    """Run one glyph with the stable v2 smoothing behavior, when supported."""
+
+    if not all(
+        hasattr(core, name) for name in CONVERSION_SAFE_ROUNDING_SETTINGS
+    ):
+        return None
+    previous = {
+        name: getattr(core, name) for name in CONVERSION_SAFE_ROUNDING_SETTINGS
+    }
+    try:
+        for name, value in CONVERSION_SAFE_ROUNDING_SETTINGS.items():
+            setattr(core, name, value)
+        return callback()
+    finally:
+        for name, value in previous.items():
+            setattr(core, name, value)
 
 
 def sha256(path: Path) -> str:
@@ -1655,6 +1687,7 @@ def build_face(
     max_tangent_control_move = 0.0
     tangent_solver_tiers = {tier: 0 for tier in TANGENT_SOLVER_TIERS}
     tangent_regression_joins: Dict[str, List[List[int]]] = {}
+    conversion_safe_fallbacks: List[str] = []
     simple_count = 0
 
     print(
@@ -1667,19 +1700,23 @@ def build_face(
             continue
         simple_count += 1
         original_path = core.glyph_to_path(glyph_set, glyph_name)
-        result = core.round_glyph(
-            character_for.get(glyph_name, glyph_name),
-            glyph_name,
-            float(font["hmtx"][glyph_name][0]),
-            original_path,
-            radius,
-            8.0,
-            1.0,
-            2.0,
-            upm,
-            "openrunde-fit",
-            True,
-        )
+
+        def round_source_glyph():
+            return core.round_glyph(
+                character_for.get(glyph_name, glyph_name),
+                glyph_name,
+                float(font["hmtx"][glyph_name][0]),
+                original_path,
+                radius,
+                8.0,
+                1.0,
+                2.0,
+                upm,
+                "openrunde-fit",
+                True,
+            )
+
+        result = round_source_glyph()
         if result.reverted:
             reverted.append(glyph_name)
             if result.warnings:
@@ -1689,22 +1726,43 @@ def build_face(
             record for record in result.normalizations if record.get("accepted")
         ]
         if result.rounded_count or accepted_normalizations:
+            conversion = None
             try:
                 conversion = contour_infos_to_glyph(result.rounded)
             except RuntimeError as error:
-                # Fail closed at the glyph boundary. A rounded cubic outline
-                # that cannot be represented on the TrueType integer lattice
-                # without violating tangent or topology postconditions is less
-                # safe than the untouched Inter glyph. Keep that original
-                # outline, record the reason, and continue the family build.
-                # The release audit separately requires successful e/c/s
-                # terminal conversions in every face, so this cannot hide the
-                # regression this solver exists to prevent.
-                reverted.append(glyph_name)
-                warnings.setdefault(glyph_name, []).append(
-                    f"tangent-quantization-revert: {error}"
+                fallback_result = conversion_safe_rounding_retry(
+                    core, round_source_glyph
                 )
-                continue
+                fallback_error: Optional[RuntimeError] = None
+                if fallback_result is not None and not fallback_result.reverted:
+                    try:
+                        conversion = contour_infos_to_glyph(
+                            fallback_result.rounded
+                        )
+                    except RuntimeError as retry_error:
+                        fallback_error = retry_error
+                    else:
+                        result = fallback_result
+                        accepted_normalizations = [
+                            record
+                            for record in result.normalizations
+                            if record.get("accepted")
+                        ]
+                        conversion_safe_fallbacks.append(glyph_name)
+                if conversion is None:
+                    details = f"tangent-quantization-revert: {error}"
+                    if fallback_error is not None:
+                        details += f"; stable-v2 retry: {fallback_error}"
+                    # Fail closed at the glyph boundary. A rounded cubic
+                    # outline that cannot be represented on the TrueType
+                    # integer lattice without violating tangent or topology
+                    # postconditions is less safe than untouched Inter. Keep
+                    # that original outline, record the reason, and continue.
+                    # The release audit separately requires successful e/c/s
+                    # conversions, so this cannot hide their regression.
+                    reverted.append(glyph_name)
+                    warnings.setdefault(glyph_name, []).append(details)
+                    continue
             glyph_table[glyph_name] = conversion.glyph
             changed.append(glyph_name)
             rounded_corners += result.rounded_count
@@ -1830,6 +1888,7 @@ def build_face(
         "max_tangent_on_curve_move": round(max_tangent_on_curve_move, 6),
         "max_tangent_control_move": round(max_tangent_control_move, 6),
         "tangent_conversion_failures": 0,
+        "conversion_safe_fallback_glyphs": conversion_safe_fallbacks,
         "tangent_solver_tiers": tangent_solver_tiers,
         "tangent_regression_joins": tangent_regression_joins,
         "reverted_glyphs": reverted,
