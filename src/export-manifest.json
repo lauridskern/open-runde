@@ -5,9 +5,9 @@
   "optical_size": 14,
   "base_bold_H_stem": 305.555298,
   "build_fingerprints": {
-    "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+    "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
     "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-    "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+    "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
     "python": "3.9.6",
     "fonttools": "4.60.2",
     "pillow": "11.3.0",
@@ -15,17 +15,17 @@
     "skia_pathops": "0.8.0.post2"
   },
   "proof_text_sha256": "5a8a460c246bce51b06b74cabe412488d668f5d3319de572eb5d26b7d44a1180",
-  "family_input_sha256": "94b4d06c7da7651d1181e08eb210f551e9336374bce67bd5a16fb5cf3c290be6",
+  "family_input_sha256": "df4a8b11e2b85fc176e1c1e0465a8934a9c1ff2806f03be34405f7732ef6433d",
   "diagnostics": {
     "winding-overlaps.png": {
       "path": "proofs/v2/diagnostics/winding-overlaps.png",
-      "sha256": "b2d0e1c155fee1a89c233302badb5e80b0760259b301d8057a86e8bb3b53696b",
-      "family_input_sha256": "94b4d06c7da7651d1181e08eb210f551e9336374bce67bd5a16fb5cf3c290be6"
+      "sha256": "cdabcdb35885cdf561f27ae4d277b99feebb275cd5fe9f72d503a2f934142682",
+      "family_input_sha256": "df4a8b11e2b85fc176e1c1e0465a8934a9c1ff2806f03be34405f7732ef6433d"
     },
     "heavy-terminals.png": {
       "path": "proofs/v2/diagnostics/heavy-terminals.png",
-      "sha256": "d2753297d5ace4785e16dece5638f6d9ef1dd13a5f3b5beb8411f79ad2e3ab0f",
-      "family_input_sha256": "94b4d06c7da7651d1181e08eb210f551e9336374bce67bd5a16fb5cf3c290be6"
+      "sha256": "0d62a618a1bce902e6441c7ca7a9d2f32b3915eaca1f10df8cec6949d47594f7",
+      "family_input_sha256": "df4a8b11e2b85fc176e1c1e0465a8934a9c1ff2806f03be34405f7732ef6433d"
     }
   },
   "faces": [
@@ -777,9 +777,9 @@
       "proof": "proofs/v2/OpenRunde-Thin.png",
       "proof_sha256": "ca5c5cbb2c5452833584eb116609b6df02615f427814ab3c27a49d6d8c6c71f4",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -817,9 +817,9 @@
           ]
         ]
       },
-      "tangent_points_adjusted": 8293,
+      "tangent_points_adjusted": 8292,
       "tangent_on_curve_points_adjusted": 1375,
-      "tangent_controls_adjusted": 6918,
+      "tangent_controls_adjusted": 6917,
       "max_smooth_join_angle": 0.599934,
       "max_tangent_direction_shift": 18.434949,
       "max_tangent_regular_direction_shift": 5.870776,
@@ -1505,15 +1505,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-ExtraLight.ttf",
-      "ttf_sha256": "d4a220b9e08ec47885a87d8bef29915c2850ac5b51b3b3af19bc285c7ae9dca5",
+      "ttf_sha256": "4ec0381c6f6b98757cdcf054fd25ebb3de843e4a0350ca8e4e5d4c63aad119ff",
       "woff2": "src/web/OpenRunde-ExtraLight.woff2",
-      "woff2_sha256": "03f6b8a754b1ee41bc1c0717c1e35018b7466249425bebbd6c006e3964d9bab9",
+      "woff2_sha256": "036ebf16724d39acc067ba6033cd4425d9880701a9cfc1fedb1afb64dc21c4aa",
       "proof": "proofs/v2/OpenRunde-ExtraLight.png",
       "proof_sha256": "a796d3e150b8ff74260e812b98f339beab82150d32cf088e26ba88cfc26638ab",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -1533,8 +1533,8 @@
       "glyphs_changed": 966,
       "rounded_corners": 6220,
       "normalized_rail_pairs": 72,
-      "tangent_curve_join_candidates": 26886,
-      "tangent_joins_checked": 26884,
+      "tangent_curve_join_candidates": 26891,
+      "tangent_joins_checked": 26889,
       "tangent_exact_lattice_reductions": 9,
       "tangent_lattice_degenerate_joins": 2,
       "tangent_lattice_degenerate_join_records": {
@@ -1551,9 +1551,9 @@
           ]
         ]
       },
-      "tangent_points_adjusted": 8293,
-      "tangent_on_curve_points_adjusted": 831,
-      "tangent_controls_adjusted": 7462,
+      "tangent_points_adjusted": 8328,
+      "tangent_on_curve_points_adjusted": 844,
+      "tangent_controls_adjusted": 7484,
       "max_smooth_join_angle": 0.599797,
       "max_tangent_direction_shift": 45.0,
       "max_tangent_regular_direction_shift": 5.994583,
@@ -1563,8 +1563,8 @@
       "tangent_conversion_failures": 0,
       "conversion_safe_fallback_glyphs": [],
       "tangent_solver_tiers": {
-        "locked": 727,
-        "joint": 193,
+        "locked": 723,
+        "joint": 197,
         "sparse-1": 1,
         "sparse-2": 43,
         "sparse-4": 2,
@@ -2204,15 +2204,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-Light.ttf",
-      "ttf_sha256": "3039760ef24ae110f7ef86c7e6910a459df57c0c9bc595cb8be863352ac2228d",
+      "ttf_sha256": "d25005140698ae9c82ab1e392950d73a7e6bd2b9ee179e83928c0606c9b8bc8e",
       "woff2": "src/web/OpenRunde-Light.woff2",
-      "woff2_sha256": "d3c212e500b1b3ff83b132681d947b4a2c5085167feb290e37800d0752d6c963",
+      "woff2_sha256": "db580b991e18cfad2d76bf4bc7128531f5834a509fc89a03f9adb722ebb107f6",
       "proof": "proofs/v2/OpenRunde-Light.png",
       "proof_sha256": "894fe580a5a3f9a85323de4e2d71a6383affe44196ff20d01db7cac4fcaa0359",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -2232,14 +2232,14 @@
       "glyphs_changed": 967,
       "rounded_corners": 6289,
       "normalized_rail_pairs": 53,
-      "tangent_curve_join_candidates": 26011,
-      "tangent_joins_checked": 26011,
+      "tangent_curve_join_candidates": 26017,
+      "tangent_joins_checked": 26017,
       "tangent_exact_lattice_reductions": 22,
       "tangent_lattice_degenerate_joins": 0,
       "tangent_lattice_degenerate_join_records": {},
-      "tangent_points_adjusted": 6777,
-      "tangent_on_curve_points_adjusted": 827,
-      "tangent_controls_adjusted": 5950,
+      "tangent_points_adjusted": 6836,
+      "tangent_on_curve_points_adjusted": 880,
+      "tangent_controls_adjusted": 5956,
       "max_smooth_join_angle": 0.599171,
       "max_tangent_direction_shift": 26.565051,
       "max_tangent_regular_direction_shift": 5.949226,
@@ -2247,14 +2247,12 @@
       "max_tangent_on_curve_move": 3.053774,
       "max_tangent_control_move": 4.181369,
       "tangent_conversion_failures": 0,
-      "conversion_safe_fallback_glyphs": [
-        "tildevertsupcomb"
-      ],
+      "conversion_safe_fallback_glyphs": [],
       "tangent_solver_tiers": {
-        "locked": 799,
+        "locked": 795,
         "joint": 133,
         "sparse-1": 0,
-        "sparse-2": 34,
+        "sparse-2": 38,
         "sparse-4": 1,
         "sparse-5": 0,
         "sparse-6": 0,
@@ -2888,15 +2886,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-Regular.ttf",
-      "ttf_sha256": "da08c147db821676f6ac9a348e099110f7f9261ebb9aa7aa90899ddb0ff64945",
+      "ttf_sha256": "0689d2111fa8d1094d2bde2bd6b7242fda65ac5855715c0f97bf385bbc027b7c",
       "woff2": "src/web/OpenRunde-Regular.woff2",
-      "woff2_sha256": "00fc3988219c13c11dc03a10739d8472d6036ebee2ea74d6da52b50f9c448067",
+      "woff2_sha256": "093c20c23dd2a873e75a9b5d75e69c6f529f1f5e710780dd950b26abbea69ac0",
       "proof": "proofs/v2/OpenRunde-Regular.png",
       "proof_sha256": "6758f95a923e58b1fbb38b8c427773628bc2e593249483ac4be0eff8fe4a16ad",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -2916,9 +2914,9 @@
       "glyphs_changed": 960,
       "rounded_corners": 6191,
       "normalized_rail_pairs": 65,
-      "tangent_curve_join_candidates": 26187,
-      "tangent_joins_checked": 26185,
-      "tangent_exact_lattice_reductions": 16,
+      "tangent_curve_join_candidates": 26193,
+      "tangent_joins_checked": 26191,
+      "tangent_exact_lattice_reductions": 18,
       "tangent_lattice_degenerate_joins": 2,
       "tangent_lattice_degenerate_join_records": {
         "uni1DFD": [
@@ -2934,9 +2932,9 @@
           ]
         ]
       },
-      "tangent_points_adjusted": 7831,
-      "tangent_on_curve_points_adjusted": 553,
-      "tangent_controls_adjusted": 7278,
+      "tangent_points_adjusted": 7881,
+      "tangent_on_curve_points_adjusted": 595,
+      "tangent_controls_adjusted": 7286,
       "max_smooth_join_angle": 0.599934,
       "max_tangent_direction_shift": 45.0,
       "max_tangent_regular_direction_shift": 5.988453,
@@ -2946,10 +2944,10 @@
       "tangent_conversion_failures": 0,
       "conversion_safe_fallback_glyphs": [],
       "tangent_solver_tiers": {
-        "locked": 813,
-        "joint": 100,
+        "locked": 806,
+        "joint": 106,
         "sparse-1": 2,
-        "sparse-2": 42,
+        "sparse-2": 43,
         "sparse-4": 3,
         "sparse-5": 0,
         "sparse-6": 0,
@@ -3553,7 +3551,7 @@
           "tangent-quantization-revert: Could not preserve 27 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 27 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "s.sups": [
-          "tangent-quantization-revert: Could not preserve 34 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 34 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
+          "tangent-quantization-revert: Could not preserve 34 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 33 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "t.sups": [
           "tangent-quantization-revert: Could not preserve 25 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 25 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
@@ -3611,15 +3609,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-Medium.ttf",
-      "ttf_sha256": "cc455aacc004038b93efc29a2dc23ec32b81f165a8678e2552ec58ade1f24efe",
+      "ttf_sha256": "b29cdbdade786a547f8cabd7ff33e877b3d2939d76caf76304332aaee017ed18",
       "woff2": "src/web/OpenRunde-Medium.woff2",
-      "woff2_sha256": "10a3b799b687141202089e75d5eafc401bdc07825f91c987cc594eead292577f",
+      "woff2_sha256": "106f6ffeb0f5ea2f38049d65a6520062efe63698b304f1d605c9dada3ccb7280",
       "proof": "proofs/v2/OpenRunde-Medium.png",
       "proof_sha256": "f31a9df89c715f2f4ca0594690f6d438a032579bea840ceefd146f04143f3579",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -3636,17 +3634,51 @@
       "measured_H_stem": 267.036865,
       "glyphs": 2937,
       "simple_glyphs_processed": 1034,
-      "glyphs_changed": 949,
-      "rounded_corners": 6143,
+      "glyphs_changed": 951,
+      "rounded_corners": 6159,
       "normalized_rail_pairs": 54,
-      "tangent_curve_join_candidates": 25253,
-      "tangent_joins_checked": 25253,
-      "tangent_exact_lattice_reductions": 13,
-      "tangent_lattice_degenerate_joins": 0,
-      "tangent_lattice_degenerate_join_records": {},
-      "tangent_points_adjusted": 7187,
-      "tangent_on_curve_points_adjusted": 444,
-      "tangent_controls_adjusted": 6743,
+      "tangent_curve_join_candidates": 25345,
+      "tangent_joins_checked": 25340,
+      "tangent_exact_lattice_reductions": 20,
+      "tangent_lattice_degenerate_joins": 5,
+      "tangent_lattice_degenerate_join_records": {
+        "uni1FC1.ss07": [
+          [
+            42,
+            43,
+            44
+          ]
+        ],
+        "uni1FC1": [
+          [
+            42,
+            43,
+            44
+          ]
+        ],
+        "brevetildecomb.cn": [
+          [
+            80,
+            81,
+            82
+          ]
+        ],
+        "_tildecross.cn": [
+          [
+            17,
+            18,
+            19
+          ],
+          [
+            19,
+            20,
+            21
+          ]
+        ]
+      },
+      "tangent_points_adjusted": 7248,
+      "tangent_on_curve_points_adjusted": 473,
+      "tangent_controls_adjusted": 6775,
       "max_smooth_join_angle": 0.599692,
       "max_tangent_direction_shift": 26.565051,
       "max_tangent_regular_direction_shift": 5.982198,
@@ -3656,10 +3688,10 @@
       "tangent_conversion_failures": 0,
       "conversion_safe_fallback_glyphs": [],
       "tangent_solver_tiers": {
-        "locked": 829,
-        "joint": 77,
-        "sparse-1": 1,
-        "sparse-2": 40,
+        "locked": 822,
+        "joint": 75,
+        "sparse-1": 4,
+        "sparse-2": 48,
         "sparse-4": 2,
         "sparse-5": 0,
         "sparse-6": 0,
@@ -4228,8 +4260,6 @@
         "uni046E",
         "uni046F",
         "uni02EC",
-        "uni1FCF",
-        "uni1FDF",
         "uni0302",
         "uni030C",
         "uni1DF2",
@@ -4325,12 +4355,6 @@
         "uni02EC": [
           "tangent-quantization-revert: Could not preserve 17 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 17 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block"
         ],
-        "uni1FCF": [
-          "tangent-quantization-revert: Could not preserve 44 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while joining sparse factors; stable-v2 retry: Could not preserve 44 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while joining sparse factors"
-        ],
-        "uni1FDF": [
-          "tangent-quantization-revert: Could not preserve 44 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while joining sparse factors; stable-v2 retry: Could not preserve 44 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while joining sparse factors"
-        ],
         "uni0302": [
           "tangent-quantization-revert: Could not preserve 16 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 16 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block"
         ],
@@ -4353,22 +4377,22 @@
           "tangent-quantization-revert: Could not preserve 30 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 30 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block"
         ],
         "circumflextildecomb.cn": [
-          "tangent-quantization-revert: Could not preserve 39 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 39 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block"
+          "tangent-quantization-revert: Could not preserve 41 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 39 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block"
         ],
         "exclamdown.case": [
           "tangent-quantization-revert: Could not preserve 18 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while joining a two-center line block; stable-v2 retry: Could not preserve 18 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while joining a two-center line block"
         ]
       },
       "ttf": "src/desktop/OpenRunde-SemiBold.ttf",
-      "ttf_sha256": "983d0defb30fbd5d8fc2f5b77355bcaf145ff8d5495b0f1775d17efde7e3debc",
+      "ttf_sha256": "dd5c74f243afb4118dd4fa1a26757b344dc2f49c042cff1171746ab2a089823e",
       "woff2": "src/web/OpenRunde-SemiBold.woff2",
-      "woff2_sha256": "f2a99ff9973393e7cdc7f9dc1267b161a1c4334bf25c5ffce4614f1c7d178f4a",
+      "woff2_sha256": "f24f889adc48d6c91f84d8c1695b624028b9fdc15afd8bc83c14210afb2314eb",
       "proof": "proofs/v2/OpenRunde-SemiBold.png",
-      "proof_sha256": "eca5c5531586b265633e7b437be7b27942a4aa1e49545782b7643bb9513e0f99",
+      "proof_sha256": "925a537feb12ba58e5840b04451413e7831d379d5d796aefd9cff03ed9f77755",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -4388,10 +4412,10 @@
       "glyphs_changed": 946,
       "rounded_corners": 6129,
       "normalized_rail_pairs": 47,
-      "tangent_curve_join_candidates": 25125,
-      "tangent_joins_checked": 25113,
-      "tangent_exact_lattice_reductions": 18,
-      "tangent_lattice_degenerate_joins": 12,
+      "tangent_curve_join_candidates": 25137,
+      "tangent_joins_checked": 25133,
+      "tangent_exact_lattice_reductions": 19,
+      "tangent_lattice_degenerate_joins": 4,
       "tangent_lattice_degenerate_join_records": {
         "uni2380": [
           [
@@ -4405,73 +4429,25 @@
             33
           ]
         ],
-        "uni1FC1.ss07": [
-          [
-            42,
-            43,
-            44
-          ],
-          [
-            44,
-            45,
-            46
-          ]
-        ],
-        "uni1FC1": [
-          [
-            42,
-            43,
-            44
-          ],
-          [
-            44,
-            45,
-            46
-          ]
-        ],
         "uni1DF2": [
           [
+            46,
             47,
+            48
+          ],
+          [
             48,
-            49
-          ],
-          [
             49,
-            50,
-            51
-          ]
-        ],
-        "brevetildecomb.cn": [
-          [
-            82,
-            83,
-            84
-          ],
-          [
-            84,
-            85,
-            86
-          ]
-        ],
-        "circumflextildecomb.cn": [
-          [
-            67,
-            68,
-            69
-          ],
-          [
-            69,
-            70,
-            71
+            50
           ]
         ]
       },
-      "tangent_points_adjusted": 7119,
-      "tangent_on_curve_points_adjusted": 458,
-      "tangent_controls_adjusted": 6661,
+      "tangent_points_adjusted": 7186,
+      "tangent_on_curve_points_adjusted": 473,
+      "tangent_controls_adjusted": 6713,
       "max_smooth_join_angle": 0.599791,
       "max_tangent_direction_shift": 28.668911,
-      "max_tangent_regular_direction_shift": 5.855435,
+      "max_tangent_regular_direction_shift": 5.959278,
       "max_tangent_micro_direction_shift": 28.668911,
       "max_tangent_on_curve_move": 2.641658,
       "max_tangent_control_move": 8.280757,
@@ -4481,9 +4457,9 @@
       ],
       "tangent_solver_tiers": {
         "locked": 835,
-        "joint": 80,
-        "sparse-1": 1,
-        "sparse-2": 28,
+        "joint": 75,
+        "sparse-1": 3,
+        "sparse-2": 31,
         "sparse-4": 2,
         "sparse-5": 0,
         "sparse-6": 0,
@@ -5206,15 +5182,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-Bold.ttf",
-      "ttf_sha256": "ec7ef33010ff83582354b26a891c1e1d3afb41aad08c6285bcd25755f4ac95d3",
+      "ttf_sha256": "4839f66d087bd2bf866035089b08c7a6ab398eedde30ff1b1f297a485633d338",
       "woff2": "src/web/OpenRunde-Bold.woff2",
-      "woff2_sha256": "791dab336d8f662198b218605d0e04c0abc472df7dbe60a8444d9b585269e01c",
+      "woff2_sha256": "f6b79204f1ee539aac74fc4a5ae6ee000a67ef6001d83cd0bce541486dfbdc77",
       "proof": "proofs/v2/OpenRunde-Bold.png",
-      "proof_sha256": "f33df28c664168790ac171680978a8a5f4f9e6e26b6855d8fb3a112a3831a7c4",
+      "proof_sha256": "880d8b77f81e54fce11b03827cfd83478ee5e5c426a968f950d9d6f4b3406e18",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -5231,14 +5207,26 @@
       "measured_H_stem": 352.64209,
       "glyphs": 2937,
       "simple_glyphs_processed": 1034,
-      "glyphs_changed": 948,
-      "rounded_corners": 6155,
+      "glyphs_changed": 949,
+      "rounded_corners": 6161,
       "normalized_rail_pairs": 47,
-      "tangent_curve_join_candidates": 26084,
-      "tangent_joins_checked": 26073,
-      "tangent_exact_lattice_reductions": 13,
-      "tangent_lattice_degenerate_joins": 11,
+      "tangent_curve_join_candidates": 26115,
+      "tangent_joins_checked": 26094,
+      "tangent_exact_lattice_reductions": 16,
+      "tangent_lattice_degenerate_joins": 21,
       "tangent_lattice_degenerate_join_records": {
+        "a.sups": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            31,
+            32,
+            33
+          ]
+        ],
         "f.sups": [
           [
             20,
@@ -5260,14 +5248,50 @@
         ],
         "five.dnom": [
           [
+            37,
+            38,
+            39
+          ],
+          [
             39,
             40,
             41
+          ]
+        ],
+        "tildecomb": [
+          [
+            17,
+            18,
+            19
           ],
           [
-            41,
-            42,
-            43
+            19,
+            20,
+            21
+          ]
+        ],
+        "uni2380": [
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            31,
+            32,
+            33
+          ]
+        ],
+        "tildedieresiscomb.lc.ss07": [
+          [
+            17,
+            18,
+            19
+          ],
+          [
+            19,
+            20,
+            21
           ]
         ],
         "kappa1": [
@@ -5282,50 +5306,65 @@
             22
           ]
         ],
-        "uni0368": [
+        "tildeacute.lc": [
           [
-            33,
-            34,
-            35
+            17,
+            18,
+            19
           ],
           [
-            35,
-            36,
-            37
+            19,
+            20,
+            21
           ]
         ],
-        "uni1DD7": [
+        "tildedieresiscomb.lc": [
           [
-            64,
-            65,
-            66
+            17,
+            18,
+            19
           ],
           [
-            66,
-            67,
-            68
+            19,
+            20,
+            21
+          ]
+        ],
+        "tildemacroncomb.lc": [
+          [
+            17,
+            18,
+            19
+          ],
+          [
+            19,
+            20,
+            21
           ]
         ]
       },
-      "tangent_points_adjusted": 6839,
-      "tangent_on_curve_points_adjusted": 432,
-      "tangent_controls_adjusted": 6407,
-      "max_smooth_join_angle": 0.599519,
+      "tangent_points_adjusted": 6900,
+      "tangent_on_curve_points_adjusted": 445,
+      "tangent_controls_adjusted": 6455,
+      "max_smooth_join_angle": 0.599648,
       "max_tangent_direction_shift": 29.40754,
-      "max_tangent_regular_direction_shift": 5.972502,
+      "max_tangent_regular_direction_shift": 5.979214,
       "max_tangent_micro_direction_shift": 29.40754,
       "max_tangent_on_curve_move": 2.186674,
-      "max_tangent_control_move": 6.113001,
+      "max_tangent_control_move": 8.79651,
       "tangent_conversion_failures": 0,
       "conversion_safe_fallback_glyphs": [
-        "three"
+        "question",
+        "copyright",
+        "u1F12F",
+        "question.ss07"
       ],
       "tangent_solver_tiers": {
-        "locked": 837,
-        "joint": 74,
-        "sparse-1": 4,
-        "sparse-2": 31,
-        "sparse-4": 2,
+        "locked": 831,
+        "joint": 76,
+        "sparse-1": 11,
+        "sparse-2": 30,
+        "sparse-4": 1,
         "sparse-5": 0,
         "sparse-6": 0,
         "full-4": 0,
@@ -5516,7 +5555,7 @@
         ],
         "e": [
           [
-            51,
+            52,
             0,
             1
           ],
@@ -5631,44 +5670,44 @@
             46
           ],
           [
-            47,
             48,
-            49
+            49,
+            50
           ],
           [
-            50,
             51,
+            52,
             0
           ],
           [
-            54,
             55,
-            56
-          ],
-          [
             56,
+            57
+          ],
+          [
             57,
-            58
-          ],
-          [
             58,
+            59
+          ],
+          [
             59,
-            60
-          ],
-          [
             60,
-            61,
-            62
+            61
           ],
           [
+            61,
             62,
+            63
+          ],
+          [
             63,
-            64
+            64,
+            65
           ]
         ],
         "s": [
           [
-            77,
+            78,
             0,
             1
           ],
@@ -5678,84 +5717,79 @@
             4
           ],
           [
-            5,
             6,
-            7
-          ],
-          [
             7,
+            8
+          ],
+          [
             8,
-            9
-          ],
-          [
             9,
+            10
+          ],
+          [
             10,
-            11
-          ],
-          [
             11,
+            12
+          ],
+          [
             12,
-            13
-          ],
-          [
             13,
+            14
+          ],
+          [
             14,
-            15
-          ],
-          [
             15,
+            16
+          ],
+          [
             16,
-            17
+            17,
+            18
           ],
           [
-            20,
             21,
-            22
-          ],
-          [
             22,
+            23
+          ],
+          [
             23,
-            24
-          ],
-          [
             24,
+            25
+          ],
+          [
             25,
-            26
-          ],
-          [
             26,
+            27
+          ],
+          [
             27,
-            28
-          ],
-          [
             28,
+            29
+          ],
+          [
             29,
-            30
-          ],
-          [
             30,
+            31
+          ],
+          [
             31,
-            32
-          ],
-          [
             32,
+            33
+          ],
+          [
             33,
-            34
-          ],
-          [
             34,
+            35
+          ],
+          [
             35,
-            36
-          ],
-          [
             36,
-            37,
-            38
+            37
           ],
           [
+            37,
             38,
-            39,
-            40
+            39
           ],
           [
             39,
@@ -5763,93 +5797,98 @@
             41
           ],
           [
+            40,
             41,
+            42
+          ],
+          [
             42,
-            43
-          ],
-          [
             43,
+            44
+          ],
+          [
             44,
-            45
-          ],
-          [
             45,
+            46
+          ],
+          [
             46,
-            47
-          ],
-          [
             47,
+            48
+          ],
+          [
             48,
-            49
-          ],
-          [
             49,
+            50
+          ],
+          [
             50,
-            51
-          ],
-          [
             51,
+            52
+          ],
+          [
             52,
-            53
-          ],
-          [
             53,
+            54
+          ],
+          [
             54,
-            55
+            55,
+            56
           ],
           [
-            56,
             57,
-            58
-          ],
-          [
             58,
+            59
+          ],
+          [
             59,
-            60
-          ],
-          [
             60,
+            61
+          ],
+          [
             61,
-            62
-          ],
-          [
             62,
+            63
+          ],
+          [
             63,
-            64
-          ],
-          [
             64,
+            65
+          ],
+          [
             65,
-            66
-          ],
-          [
             66,
+            67
+          ],
+          [
             67,
-            68
-          ],
-          [
             68,
+            69
+          ],
+          [
             69,
-            70
-          ],
-          [
             70,
+            71
+          ],
+          [
             71,
-            72
-          ],
-          [
             72,
+            73
+          ],
+          [
             73,
-            74
-          ],
-          [
             74,
-            75,
-            76
+            75
           ],
           [
+            75,
             76,
+            77
+          ],
+          [
             77,
+            78,
             0
           ]
         ]
@@ -5890,7 +5929,6 @@
         "uni04C8",
         "one.dnom.ss01",
         "carondot.lc.ss07",
-        "Epsilon1",
         "uni01AD",
         "uni02EC",
         "seagullsubcomb",
@@ -5937,7 +5975,7 @@
           "tangent-quantization-revert: Could not preserve 40 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 40 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "uni0260": [
-          "tangent-quantization-revert: Could not preserve 52 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 52 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
+          "tangent-quantization-revert: Could not preserve 52 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 51 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "uni0260.sc": [
           "tangent-quantization-revert: Could not preserve 45 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 44 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
@@ -6002,9 +6040,6 @@
         "carondot.lc.ss07": [
           "tangent-quantization-revert: Could not preserve 25 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 25 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block"
         ],
-        "Epsilon1": [
-          "tangent-quantization-revert: Could not preserve 50 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 50 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
-        ],
         "uni01AD": [
           "tangent-quantization-revert: Could not preserve 33 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 33 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
@@ -6019,15 +6054,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-ExtraBold.ttf",
-      "ttf_sha256": "dccebce12058ca36aee4f851a9cb2f66dd63f7e56970bb7c20f63cd51b715a16",
+      "ttf_sha256": "3fdd3efc510b247a8e8b9d246d2e5d7143d2a57fad0108c13ae86a2481f2b37a",
       "woff2": "src/web/OpenRunde-ExtraBold.woff2",
-      "woff2_sha256": "56b361ea8b1ee396149ea922729df93703197df191ecf4f8e3ba3469cb7b1cd8",
+      "woff2_sha256": "55b550f1e3d8328968d889633ff74f5778b014fa5558df95ac459b3b591b1a6f",
       "proof": "proofs/v2/OpenRunde-ExtraBold.png",
-      "proof_sha256": "66be4c76c1047f72dbf301aa6165bfe54f675e86d37336180a2b7ea5f9d1ebeb",
+      "proof_sha256": "9def9a7ebcfe8d6815915e5ab3eb4b12e0512c3c86f80110cf7ed008fa472ff8",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -6047,35 +6082,11 @@
       "glyphs_changed": 950,
       "rounded_corners": 6148,
       "normalized_rail_pairs": 45,
-      "tangent_curve_join_candidates": 25336,
-      "tangent_joins_checked": 25294,
-      "tangent_exact_lattice_reductions": 12,
-      "tangent_lattice_degenerate_joins": 42,
+      "tangent_curve_join_candidates": 25325,
+      "tangent_joins_checked": 25293,
+      "tangent_exact_lattice_reductions": 11,
+      "tangent_lattice_degenerate_joins": 32,
       "tangent_lattice_degenerate_join_records": {
-        "uni01A8": [
-          [
-            29,
-            30,
-            31
-          ],
-          [
-            31,
-            32,
-            33
-          ]
-        ],
-        "uni04A9": [
-          [
-            38,
-            39,
-            40
-          ],
-          [
-            40,
-            41,
-            42
-          ]
-        ],
         "nine.dnom": [
           [
             5,
@@ -6086,18 +6097,6 @@
             7,
             8,
             9
-          ]
-        ],
-        "uni0480": [
-          [
-            63,
-            64,
-            65
-          ],
-          [
-            65,
-            66,
-            67
           ]
         ],
         "uni046F": [
@@ -6120,18 +6119,6 @@
             113,
             114,
             115
-          ]
-        ],
-        "uni0368": [
-          [
-            33,
-            34,
-            35
-          ],
-          [
-            35,
-            36,
-            37
           ]
         ],
         "uni0302": [
@@ -6176,18 +6163,6 @@
             23,
             24,
             25
-          ]
-        ],
-        "uni1DD7": [
-          [
-            64,
-            65,
-            66
-          ],
-          [
-            66,
-            67,
-            68
           ]
         ],
         "circumflexacutecomb.cn": [
@@ -6280,33 +6255,41 @@
         ],
         "tildevertsupcomb": [
           [
-            35,
-            36,
-            37
-          ],
-          [
             37,
             38,
             39
+          ],
+          [
+            39,
+            40,
+            41
           ]
         ]
       },
-      "tangent_points_adjusted": 6892,
-      "tangent_on_curve_points_adjusted": 588,
-      "tangent_controls_adjusted": 6304,
+      "tangent_points_adjusted": 7031,
+      "tangent_on_curve_points_adjusted": 619,
+      "tangent_controls_adjusted": 6412,
       "max_smooth_join_angle": 0.599648,
       "max_tangent_direction_shift": 37.423023,
       "max_tangent_regular_direction_shift": 5.935041,
       "max_tangent_micro_direction_shift": 37.423023,
       "max_tangent_on_curve_move": 3.020645,
-      "max_tangent_control_move": 5.667288,
+      "max_tangent_control_move": 8.923123,
       "tangent_conversion_failures": 0,
-      "conversion_safe_fallback_glyphs": [],
+      "conversion_safe_fallback_glyphs": [
+        "uni1EE1",
+        "tildecomb",
+        "tildedieresiscomb.lc.ss07",
+        "tildeacute.lc",
+        "tildedieresiscomb.lc",
+        "tildemacroncomb.lc",
+        "ogonek.A"
+      ],
       "tangent_solver_tiers": {
-        "locked": 832,
-        "joint": 64,
-        "sparse-1": 7,
-        "sparse-2": 36,
+        "locked": 824,
+        "joint": 67,
+        "sparse-1": 11,
+        "sparse-2": 37,
         "sparse-4": 11,
         "sparse-5": 0,
         "sparse-6": 0,
@@ -6650,7 +6633,7 @@
         ],
         "s": [
           [
-            78,
+            77,
             0,
             1
           ],
@@ -6660,79 +6643,84 @@
             4
           ],
           [
+            5,
             6,
+            7
+          ],
+          [
             7,
-            8
-          ],
-          [
             8,
+            9
+          ],
+          [
             9,
-            10
-          ],
-          [
             10,
+            11
+          ],
+          [
             11,
-            12
-          ],
-          [
             12,
+            13
+          ],
+          [
             13,
-            14
-          ],
-          [
             14,
-            15,
-            16
+            15
           ],
           [
+            16,
             17,
+            18
+          ],
+          [
             18,
-            19
-          ],
-          [
             19,
+            20
+          ],
+          [
             20,
-            21
-          ],
-          [
             21,
+            22
+          ],
+          [
             22,
-            23
-          ],
-          [
             23,
+            24
+          ],
+          [
             24,
-            25
-          ],
-          [
             25,
+            26
+          ],
+          [
             26,
-            27
-          ],
-          [
             27,
+            28
+          ],
+          [
             28,
-            29
-          ],
-          [
             29,
+            30
+          ],
+          [
             30,
-            31
-          ],
-          [
             31,
+            32
+          ],
+          [
             32,
-            33
-          ],
-          [
             33,
-            34,
-            35
+            34
           ],
           [
+            35,
             36,
+            37
+          ],
+          [
             37,
-            38
+            38,
+            39
           ],
           [
             38,
@@ -6740,98 +6728,93 @@
             40
           ],
           [
-            39,
             40,
-            41
-          ],
-          [
             41,
+            42
+          ],
+          [
             42,
-            43
-          ],
-          [
             43,
+            44
+          ],
+          [
             44,
-            45
-          ],
-          [
             45,
+            46
+          ],
+          [
             46,
-            47
-          ],
-          [
             47,
+            48
+          ],
+          [
             48,
-            49
-          ],
-          [
             49,
+            50
+          ],
+          [
             50,
-            51
-          ],
-          [
             51,
+            52
+          ],
+          [
             52,
-            53
-          ],
-          [
             53,
+            54
+          ],
+          [
             54,
-            55
-          ],
-          [
             55,
-            56,
-            57
+            56
           ],
           [
+            57,
             58,
+            59
+          ],
+          [
             59,
-            60
-          ],
-          [
             60,
+            61
+          ],
+          [
             61,
-            62
-          ],
-          [
             62,
+            63
+          ],
+          [
             63,
-            64
-          ],
-          [
             64,
+            65
+          ],
+          [
             65,
-            66
-          ],
-          [
             66,
+            67
+          ],
+          [
             67,
-            68
-          ],
-          [
             68,
+            69
+          ],
+          [
             69,
-            70
-          ],
-          [
             70,
+            71
+          ],
+          [
             71,
-            72
-          ],
-          [
             72,
-            73,
-            74
+            73
           ],
           [
+            74,
             75,
-            76,
-            77
+            76
           ],
           [
+            76,
             77,
-            78,
             0
           ]
         ]
@@ -6887,10 +6870,10 @@
           "tangent-quantization-revert: Could not preserve 25 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 25 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "uni0193": [
-          "tangent-quantization-revert: Could not preserve 46 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 46 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
+          "tangent-quantization-revert: Could not preserve 46 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 45 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "uni0193.1": [
-          "tangent-quantization-revert: Could not preserve 51 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 51 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
+          "tangent-quantization-revert: Could not preserve 51 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 50 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "uni04C7": [
           "tangent-quantization-revert: Could not preserve 29 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 29 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
@@ -6998,22 +6981,22 @@
           "tangent-quantization-revert: Could not preserve 32 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 32 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block"
         ],
         "seagullsubcomb": [
-          "tangent-quantization-revert: Could not preserve 30 smooth join(s) during TrueType quantization: candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 30 smooth join(s) during TrueType quantization: candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; solver exceeded 7000000 work units while eliminating a smooth-join center"
+          "tangent-quantization-revert: Could not preserve 30 smooth join(s) during TrueType quantization: join has no candidate within movement, angle, and direction limits; candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 30 smooth join(s) during TrueType quantization: candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "carondot.lc": [
           "tangent-quantization-revert: Could not preserve 25 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 25 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block"
         ]
       },
       "ttf": "src/desktop/OpenRunde-Black.ttf",
-      "ttf_sha256": "fe8f410ee85f315ad5a5911483bc6c8ea708e5fcd60548af8ccb156201805b6e",
+      "ttf_sha256": "933865265e0880fd02314e9c6c3358cd7564848c1a9da53b09c2816a506fe4b3",
       "woff2": "src/web/OpenRunde-Black.woff2",
-      "woff2_sha256": "74aaeb71a329d455b10ebf9b31ba1ca166ac7ccd5b0e4d5851bd42cbbf93601d",
+      "woff2_sha256": "585e777a47e4625d72c1db84bf77d74134c71786f7e6c4cf623e22aa92e866ae",
       "proof": "proofs/v2/OpenRunde-Black.png",
-      "proof_sha256": "f3ff7220c77a243741a6209cacb40ef8e0cfa03c681986cc20dde04611a73de8",
+      "proof_sha256": "bc4f2bfe0e033cd0fb01119d121ffec9113810d273d9dea5404f9ec9df79c3db",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -7945,9 +7928,9 @@
       "proof": "proofs/v2/OpenRunde-ThinItalic.png",
       "proof_sha256": "d2f896e9c1fff68e9e85b0ec4d61432eb0a627b0455f6f3a9adbedcbb8b07d7c",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -7972,9 +7955,9 @@
       "tangent_exact_lattice_reductions": 16,
       "tangent_lattice_degenerate_joins": 0,
       "tangent_lattice_degenerate_join_records": {},
-      "tangent_points_adjusted": 13536,
-      "tangent_on_curve_points_adjusted": 3226,
-      "tangent_controls_adjusted": 10310,
+      "tangent_points_adjusted": 13534,
+      "tangent_on_curve_points_adjusted": 3225,
+      "tangent_controls_adjusted": 10309,
       "max_smooth_join_angle": 0.599981,
       "max_tangent_direction_shift": 45.0,
       "max_tangent_regular_direction_shift": 5.999483,
@@ -8681,15 +8664,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-ExtraLightItalic.ttf",
-      "ttf_sha256": "9e506cc1474a2750469b23e76ecc78161bbc904752e606f34fb4e4c354db069b",
+      "ttf_sha256": "bc93924e19e87a96aa9f3468adf35c6d56f0cee33a8f4856e5dda97eb34440a2",
       "woff2": "src/web/OpenRunde-ExtraLightItalic.woff2",
-      "woff2_sha256": "43d1de167d5e46e714cc2e9fd526cf3a1a936f1f86eccbb73f8c380e6e7a9a63",
+      "woff2_sha256": "9d05c9e633194810aadab4142cdd60a8af8f45a0c1335f70e981835b59c1f58b",
       "proof": "proofs/v2/OpenRunde-ExtraLightItalic.png",
       "proof_sha256": "f4db2ae120ba2e3bd0cfc96a0e6c083cc8aab949c33ff63229f06fb2272179b4",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -8722,9 +8705,9 @@
           ]
         ]
       },
-      "tangent_points_adjusted": 10716,
-      "tangent_on_curve_points_adjusted": 1532,
-      "tangent_controls_adjusted": 9184,
+      "tangent_points_adjusted": 10726,
+      "tangent_on_curve_points_adjusted": 1531,
+      "tangent_controls_adjusted": 9195,
       "max_smooth_join_angle": 0.599775,
       "max_tangent_direction_shift": 45.0,
       "max_tangent_regular_direction_shift": 5.998901,
@@ -9406,15 +9389,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-LightItalic.ttf",
-      "ttf_sha256": "d37772e459d9946f620c99640f423f6ba3ea57638058b5c7324213c31d7f0c77",
+      "ttf_sha256": "0b97a6caaa688d9510752d259a617b74c368c9e49e9d4a59bf319c12348cd3d0",
       "woff2": "src/web/OpenRunde-LightItalic.woff2",
-      "woff2_sha256": "d6c3e85e4c39e4bf70edb34ca6c80009066643a0a58618a633cd5e82b36b0bfa",
+      "woff2_sha256": "6e88ce34bb24d132d28b811593babc2c1c8c35da063c8cd3aed1ace40b17d9c7",
       "proof": "proofs/v2/OpenRunde-LightItalic.png",
       "proof_sha256": "96386fd4bc962931ab243c7d3d73f64ab08462a70958d8f7a01317df045e0bbe",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -9434,8 +9417,8 @@
       "glyphs_changed": 967,
       "rounded_corners": 6228,
       "normalized_rail_pairs": 58,
-      "tangent_curve_join_candidates": 25861,
-      "tangent_joins_checked": 25859,
+      "tangent_curve_join_candidates": 25862,
+      "tangent_joins_checked": 25860,
       "tangent_exact_lattice_reductions": 16,
       "tangent_lattice_degenerate_joins": 2,
       "tangent_lattice_degenerate_join_records": {
@@ -9452,9 +9435,9 @@
           ]
         ]
       },
-      "tangent_points_adjusted": 10074,
-      "tangent_on_curve_points_adjusted": 812,
-      "tangent_controls_adjusted": 9262,
+      "tangent_points_adjusted": 10140,
+      "tangent_on_curve_points_adjusted": 857,
+      "tangent_controls_adjusted": 9283,
       "max_smooth_join_angle": 0.599934,
       "max_tangent_direction_shift": 31.363465,
       "max_tangent_regular_direction_shift": 5.964487,
@@ -9464,10 +9447,10 @@
       "tangent_conversion_failures": 0,
       "conversion_safe_fallback_glyphs": [],
       "tangent_solver_tiers": {
-        "locked": 750,
-        "joint": 168,
-        "sparse-1": 0,
-        "sparse-2": 42,
+        "locked": 746,
+        "joint": 170,
+        "sparse-1": 1,
+        "sparse-2": 43,
         "sparse-4": 6,
         "sparse-5": 1,
         "sparse-6": 0,
@@ -10107,15 +10090,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-Italic.ttf",
-      "ttf_sha256": "e6910c80265d8d603c9184349a5b9b4393a5100b85f5916c55b6b29183f30792",
+      "ttf_sha256": "dad601e3cb6e22b6013174e5d8ee8a99ed58ea2bd4d3a6e8af69c326ce45e51a",
       "woff2": "src/web/OpenRunde-Italic.woff2",
-      "woff2_sha256": "a18607739acf5219c72141bf92dc87a3dc72455f757d11b054f18a1a2b6bddc3",
+      "woff2_sha256": "12e80257f9363d3ab9e529ea8f546b3076b77cd25c0dd74d9139ec821d98a3f1",
       "proof": "proofs/v2/OpenRunde-Italic.png",
       "proof_sha256": "9646a11de92276abc9f3af4075bee73681f82116bd6aceed2c299908632f95ef",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -10135,28 +10118,28 @@
       "glyphs_changed": 968,
       "rounded_corners": 6236,
       "normalized_rail_pairs": 55,
-      "tangent_curve_join_candidates": 25491,
-      "tangent_joins_checked": 25491,
-      "tangent_exact_lattice_reductions": 15,
+      "tangent_curve_join_candidates": 25489,
+      "tangent_joins_checked": 25489,
+      "tangent_exact_lattice_reductions": 13,
       "tangent_lattice_degenerate_joins": 0,
       "tangent_lattice_degenerate_join_records": {},
-      "tangent_points_adjusted": 9985,
-      "tangent_on_curve_points_adjusted": 516,
-      "tangent_controls_adjusted": 9469,
+      "tangent_points_adjusted": 10034,
+      "tangent_on_curve_points_adjusted": 527,
+      "tangent_controls_adjusted": 9507,
       "max_smooth_join_angle": 0.599981,
       "max_tangent_direction_shift": 31.660985,
       "max_tangent_regular_direction_shift": 5.987701,
       "max_tangent_micro_direction_shift": 31.660985,
-      "max_tangent_on_curve_move": 3.536012,
+      "max_tangent_on_curve_move": 3.769686,
       "max_tangent_control_move": 8.408588,
       "tangent_conversion_failures": 0,
       "conversion_safe_fallback_glyphs": [],
       "tangent_solver_tiers": {
-        "locked": 797,
-        "joint": 129,
-        "sparse-1": 2,
-        "sparse-2": 35,
-        "sparse-4": 5,
+        "locked": 795,
+        "joint": 126,
+        "sparse-1": 4,
+        "sparse-2": 37,
+        "sparse-4": 6,
         "sparse-5": 0,
         "sparse-6": 0,
         "full-4": 0,
@@ -10791,15 +10774,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-MediumItalic.ttf",
-      "ttf_sha256": "789af272717e25b37733d6e52209b843906a0da029baa1a3f5ac6955f4659f74",
+      "ttf_sha256": "7e9e372511dde090a4fd7f68c8e062764ac11323256f591b9ea09b2c27e660d2",
       "woff2": "src/web/OpenRunde-MediumItalic.woff2",
-      "woff2_sha256": "b12d25808e23a0e229270a9c94c67ca09c53068aae91a282015d31891ae2279a",
+      "woff2_sha256": "a2c69c0df53a928c3bee91b5d4f50eb4edfc71bfdc10dc3aba51358f5dc64aa2",
       "proof": "proofs/v2/OpenRunde-MediumItalic.png",
       "proof_sha256": "a243273a7ce67350089265ddfb836b5b8fe3fd404e720fecb2190b0bfbadeaa8",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -10819,27 +10802,27 @@
       "glyphs_changed": 967,
       "rounded_corners": 6208,
       "normalized_rail_pairs": 53,
-      "tangent_curve_join_candidates": 25338,
-      "tangent_joins_checked": 25338,
+      "tangent_curve_join_candidates": 25342,
+      "tangent_joins_checked": 25342,
       "tangent_exact_lattice_reductions": 11,
       "tangent_lattice_degenerate_joins": 0,
       "tangent_lattice_degenerate_join_records": {},
-      "tangent_points_adjusted": 11214,
-      "tangent_on_curve_points_adjusted": 516,
-      "tangent_controls_adjusted": 10698,
+      "tangent_points_adjusted": 11286,
+      "tangent_on_curve_points_adjusted": 551,
+      "tangent_controls_adjusted": 10735,
       "max_smooth_join_angle": 0.599884,
       "max_tangent_direction_shift": 26.565051,
       "max_tangent_regular_direction_shift": 5.806117,
       "max_tangent_micro_direction_shift": 26.565051,
       "max_tangent_on_curve_move": 3.571972,
-      "max_tangent_control_move": 6.139138,
+      "max_tangent_control_move": 7.607183,
       "tangent_conversion_failures": 0,
       "conversion_safe_fallback_glyphs": [],
       "tangent_solver_tiers": {
-        "locked": 800,
-        "joint": 117,
-        "sparse-1": 3,
-        "sparse-2": 40,
+        "locked": 794,
+        "joint": 122,
+        "sparse-1": 5,
+        "sparse-2": 39,
         "sparse-4": 7,
         "sparse-5": 0,
         "sparse-6": 0,
@@ -11453,7 +11436,7 @@
           "tangent-quantization-revert: Could not preserve 17 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 17 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block"
         ],
         "uni1DD3": [
-          "tangent-quantization-revert: Could not preserve 27 smooth join(s) during TrueType quantization: join has no candidate within movement, angle, and direction limits; candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 27 smooth join(s) during TrueType quantization: join has no candidate within movement, angle, and direction limits; candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; solver exceeded 7000000 work units while eliminating a smooth-join center"
+          "tangent-quantization-revert: Could not preserve 27 smooth join(s) during TrueType quantization: join has no candidate within movement, angle, and direction limits; candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 24 smooth join(s) during TrueType quantization: join has no candidate within movement, angle, and direction limits; candidate tangent quantization changes contour topology; candidate tangent quantization changes contour topology; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "uni0302": [
           "tangent-quantization-revert: Could not preserve 17 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 17 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block"
@@ -11484,15 +11467,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-SemiBoldItalic.ttf",
-      "ttf_sha256": "b0c4b8346665f76f0611a2b3697d857253736285ad3352227eee0350cbade0b3",
+      "ttf_sha256": "13b491ff46035649b7b38e4af77350dc2f142d7f23c56b1c71f88a563496295d",
       "woff2": "src/web/OpenRunde-SemiBoldItalic.woff2",
-      "woff2_sha256": "a87bced5625ecfbde863a0279c09e0465bb81cde3032f21fe3035df78d8e5bd4",
+      "woff2_sha256": "6c34b0edb3657c4bb9e7a1fe3d260e3719777c3ee87dce173c535695d66393a7",
       "proof": "proofs/v2/OpenRunde-SemiBoldItalic.png",
-      "proof_sha256": "50b2bb52af4aa6da84768fff5359353284c764353c6d3204fd162180c1806718",
+      "proof_sha256": "22ff08565cf90ca4d794ce22e4bd173c99cab1355fe21283a1ebe868dd18110c",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -11512,35 +11495,11 @@
       "glyphs_changed": 964,
       "rounded_corners": 6206,
       "normalized_rail_pairs": 50,
-      "tangent_curve_join_candidates": 25159,
-      "tangent_joins_checked": 25153,
-      "tangent_exact_lattice_reductions": 23,
-      "tangent_lattice_degenerate_joins": 6,
+      "tangent_curve_join_candidates": 25156,
+      "tangent_joins_checked": 25154,
+      "tangent_exact_lattice_reductions": 21,
+      "tangent_lattice_degenerate_joins": 2,
       "tangent_lattice_degenerate_join_records": {
-        "g.sc": [
-          [
-            39,
-            40,
-            41
-          ],
-          [
-            41,
-            42,
-            43
-          ]
-        ],
-        "uni0260.sc": [
-          [
-            62,
-            63,
-            64
-          ],
-          [
-            64,
-            65,
-            66
-          ]
-        ],
         "y.sups": [
           [
             12,
@@ -11554,23 +11513,23 @@
           ]
         ]
       },
-      "tangent_points_adjusted": 9181,
-      "tangent_on_curve_points_adjusted": 529,
-      "tangent_controls_adjusted": 8652,
+      "tangent_points_adjusted": 9214,
+      "tangent_on_curve_points_adjusted": 536,
+      "tangent_controls_adjusted": 8678,
       "max_smooth_join_angle": 0.599648,
       "max_tangent_direction_shift": 44.392868,
       "max_tangent_regular_direction_shift": 5.926449,
       "max_tangent_micro_direction_shift": 44.392868,
-      "max_tangent_on_curve_move": 3.757529,
+      "max_tangent_on_curve_move": 2.494568,
       "max_tangent_control_move": 8.640788,
       "tangent_conversion_failures": 0,
       "conversion_safe_fallback_glyphs": [],
       "tangent_solver_tiers": {
-        "locked": 805,
-        "joint": 107,
-        "sparse-1": 2,
-        "sparse-2": 45,
-        "sparse-4": 5,
+        "locked": 804,
+        "joint": 111,
+        "sparse-1": 3,
+        "sparse-2": 42,
+        "sparse-4": 4,
         "sparse-5": 0,
         "sparse-6": 0,
         "full-4": 0,
@@ -11948,19 +11907,14 @@
         ],
         "s": [
           [
-            79,
+            81,
             0,
             1
           ],
           [
-            1,
             2,
-            3
-          ],
-          [
             3,
-            4,
-            5
+            4
           ],
           [
             5,
@@ -11983,19 +11937,19 @@
             13
           ],
           [
-            15,
-            16,
-            17
+            13,
+            14,
+            15
           ],
           [
-            20,
-            21,
-            22
+            17,
+            18,
+            19
           ],
           [
-            24,
-            25,
-            26
+            22,
+            23,
+            24
           ],
           [
             26,
@@ -12038,9 +11992,9 @@
             42
           ],
           [
-            41,
             42,
-            43
+            43,
+            44
           ],
           [
             43,
@@ -12073,19 +12027,19 @@
             55
           ],
           [
-            57,
-            58,
-            59
+            55,
+            56,
+            57
           ],
           [
-            62,
-            63,
-            64
+            59,
+            60,
+            61
           ],
           [
-            66,
-            67,
-            68
+            64,
+            65,
+            66
           ],
           [
             68,
@@ -12115,6 +12069,11 @@
           [
             78,
             79,
+            80
+          ],
+          [
+            80,
+            81,
             0
           ]
         ]
@@ -12155,7 +12114,7 @@
           "tangent-quantization-revert: Could not preserve 15 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 15 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "uni026C.ss02": [
-          "tangent-quantization-revert: Could not preserve 30 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 30 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
+          "tangent-quantization-revert: Could not preserve 30 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 30 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "trthook": [
           "tangent-quantization-revert: Could not preserve 26 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 26 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
@@ -12170,7 +12129,7 @@
           "tangent-quantization-revert: Could not preserve 24 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 24 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "pi": [
-          "tangent-quantization-revert: Could not preserve 25 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 25 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while eliminating a smooth-join center"
+          "tangent-quantization-revert: Could not preserve 25 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 25 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while eliminating a smooth-join center"
         ],
         "florin": [
           "tangent-quantization-revert: Could not preserve 30 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center; stable-v2 retry: Could not preserve 30 smooth join(s) during TrueType quantization: component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while eliminating a smooth-join center"
@@ -12216,15 +12175,15 @@
         ]
       },
       "ttf": "src/desktop/OpenRunde-BoldItalic.ttf",
-      "ttf_sha256": "ad12d9d89d6a8f0a7f37c715b8dc4b8c31952a2c725d7f645d3da20f50b5e901",
+      "ttf_sha256": "55e1c1db3fe93019e3719193fe88956982f2a6caa5741d7368d4aebd53c02ba6",
       "woff2": "src/web/OpenRunde-BoldItalic.woff2",
-      "woff2_sha256": "2c9d9ea01d2d113010811aa3af13d8293818a947163748104282eb9c6070608e",
+      "woff2_sha256": "214c9557b3b47bcaee231a08611fd18983658d610c16ef9149a5f163981bd2a6",
       "proof": "proofs/v2/OpenRunde-BoldItalic.png",
-      "proof_sha256": "3293b1b6bdcd12f64a85912ea4de8bc6b2a2068fa19c0a27a42855a8a6d21c4d",
+      "proof_sha256": "fe48adb19c6df80216693108b9c8e2a87b395c6a28306b8fbd2e1a00d97c5e77",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -12244,10 +12203,10 @@
       "glyphs_changed": 974,
       "rounded_corners": 6291,
       "normalized_rail_pairs": 48,
-      "tangent_curve_join_candidates": 25309,
-      "tangent_joins_checked": 25305,
-      "tangent_exact_lattice_reductions": 16,
-      "tangent_lattice_degenerate_joins": 4,
+      "tangent_curve_join_candidates": 25314,
+      "tangent_joins_checked": 25312,
+      "tangent_exact_lattice_reductions": 12,
+      "tangent_lattice_degenerate_joins": 2,
       "tangent_lattice_degenerate_join_records": {
         "uni01B4": [
           [
@@ -12260,39 +12219,25 @@
             16,
             17
           ]
-        ],
-        "uni1DCC": [
-          [
-            28,
-            29,
-            30
-          ],
-          [
-            30,
-            31,
-            32
-          ]
         ]
       },
-      "tangent_points_adjusted": 9303,
-      "tangent_on_curve_points_adjusted": 514,
-      "tangent_controls_adjusted": 8789,
+      "tangent_points_adjusted": 9409,
+      "tangent_on_curve_points_adjusted": 545,
+      "tangent_controls_adjusted": 8864,
       "max_smooth_join_angle": 0.599648,
       "max_tangent_direction_shift": 34.545201,
       "max_tangent_regular_direction_shift": 5.98168,
       "max_tangent_micro_direction_shift": 34.545201,
       "max_tangent_on_curve_move": 2.738713,
-      "max_tangent_control_move": 8.393453,
+      "max_tangent_control_move": 8.667284,
       "tangent_conversion_failures": 0,
-      "conversion_safe_fallback_glyphs": [
-        "uni1DCB"
-      ],
+      "conversion_safe_fallback_glyphs": [],
       "tangent_solver_tiers": {
-        "locked": 811,
-        "joint": 110,
-        "sparse-1": 3,
-        "sparse-2": 42,
-        "sparse-4": 8,
+        "locked": 801,
+        "joint": 115,
+        "sparse-1": 8,
+        "sparse-2": 43,
+        "sparse-4": 7,
         "sparse-5": 0,
         "sparse-6": 0,
         "full-4": 0,
@@ -12670,7 +12615,7 @@
         ],
         "s": [
           [
-            82,
+            83,
             0,
             1
           ],
@@ -12765,73 +12710,78 @@
             45
           ],
           [
-            48,
+            46,
+            47,
+            48
+          ],
+          [
             49,
-            50
-          ],
-          [
             50,
+            51
+          ],
+          [
             51,
-            52
-          ],
-          [
             52,
+            53
+          ],
+          [
             53,
-            54
-          ],
-          [
             54,
+            55
+          ],
+          [
             55,
-            56
-          ],
-          [
             56,
+            57
+          ],
+          [
             57,
-            58
+            58,
+            59
           ],
           [
-            60,
             61,
-            62
+            62,
+            63
           ],
           [
-            65,
             66,
-            67
+            67,
+            68
           ],
           [
-            69,
             70,
-            71
-          ],
-          [
             71,
+            72
+          ],
+          [
             72,
-            73
-          ],
-          [
             73,
+            74
+          ],
+          [
             74,
-            75
-          ],
-          [
             75,
+            76
+          ],
+          [
             76,
-            77
-          ],
-          [
             77,
+            78
+          ],
+          [
             78,
-            79
-          ],
-          [
             79,
-            80,
-            81
+            80
           ],
           [
+            80,
             81,
+            82
+          ],
+          [
             82,
+            83,
             0
           ]
         ]
@@ -12889,19 +12839,19 @@
           "tangent-quantization-revert: Could not preserve 33 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 33 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block"
         ],
         "circumflextildecomb.cn": [
-          "tangent-quantization-revert: Could not preserve 39 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 39 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block"
+          "tangent-quantization-revert: Could not preserve 41 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 39 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block"
         ]
       },
       "ttf": "src/desktop/OpenRunde-ExtraBoldItalic.ttf",
-      "ttf_sha256": "12bf64f3dbd8d99d173ac13eac364b9171786ea66e6695fb212e190a53252b36",
+      "ttf_sha256": "1ab952e819effbd16d71ac0540bc487f0419429eb849c4eacfa99eebce55a70d",
       "woff2": "src/web/OpenRunde-ExtraBoldItalic.woff2",
-      "woff2_sha256": "8d035352be26c1cc42b6b6056acbc1a075f6bb9c4d693252f7ff18dc4000bae5",
+      "woff2_sha256": "8296538cf7c87d3c0780dc8c317637648d00f18376f8f3796a6fa09c32b1c673",
       "proof": "proofs/v2/OpenRunde-ExtraBoldItalic.png",
-      "proof_sha256": "d7ef7b68734050ad50b737337bf62b10a443b953d5cf2ef0db31e23844ac86d9",
+      "proof_sha256": "d1cc1b5b68b826200c326a06c2ab682df875cb902ff96d4a02e413176ffdb9a9",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
@@ -12918,12 +12868,12 @@
       "measured_H_stem": 404.0,
       "glyphs": 2901,
       "simple_glyphs_processed": 1033,
-      "glyphs_changed": 975,
-      "rounded_corners": 6287,
+      "glyphs_changed": 976,
+      "rounded_corners": 6295,
       "normalized_rail_pairs": 50,
-      "tangent_curve_join_candidates": 25292,
-      "tangent_joins_checked": 25290,
-      "tangent_exact_lattice_reductions": 13,
+      "tangent_curve_join_candidates": 25323,
+      "tangent_joins_checked": 25321,
+      "tangent_exact_lattice_reductions": 11,
       "tangent_lattice_degenerate_joins": 2,
       "tangent_lattice_degenerate_join_records": {
         "ordfeminine": [
@@ -12939,9 +12889,9 @@
           ]
         ]
       },
-      "tangent_points_adjusted": 10487,
-      "tangent_on_curve_points_adjusted": 655,
-      "tangent_controls_adjusted": 9832,
+      "tangent_points_adjusted": 10562,
+      "tangent_on_curve_points_adjusted": 694,
+      "tangent_controls_adjusted": 9868,
       "max_smooth_join_angle": 0.599648,
       "max_tangent_direction_shift": 45.0,
       "max_tangent_regular_direction_shift": 5.983652,
@@ -12949,13 +12899,15 @@
       "max_tangent_on_curve_move": 3.846666,
       "max_tangent_control_move": 8.95742,
       "tangent_conversion_failures": 0,
-      "conversion_safe_fallback_glyphs": [],
+      "conversion_safe_fallback_glyphs": [
+        "uni1DD4"
+      ],
       "tangent_solver_tiers": {
-        "locked": 826,
-        "joint": 92,
-        "sparse-1": 5,
-        "sparse-2": 44,
-        "sparse-4": 8,
+        "locked": 817,
+        "joint": 91,
+        "sparse-1": 12,
+        "sparse-2": 49,
+        "sparse-4": 7,
         "sparse-5": 0,
         "sparse-6": 0,
         "full-4": 0,
@@ -13156,7 +13108,7 @@
         ],
         "e": [
           [
-            56,
+            53,
             0,
             1
           ],
@@ -13271,196 +13223,14 @@
             48
           ],
           [
-            48,
-            49,
-            50
-          ],
-          [
-            52,
-            53,
-            54
-          ],
-          [
-            55,
-            56,
-            0
-          ],
-          [
-            58,
-            59,
-            60
-          ],
-          [
-            60,
-            61,
-            62
-          ],
-          [
-            62,
-            63,
-            64
-          ],
-          [
-            64,
-            65,
-            66
-          ],
-          [
-            66,
-            67,
-            68
-          ],
-          [
-            68,
-            69,
-            70
-          ],
-          [
-            70,
-            71,
-            72
-          ],
-          [
-            72,
-            73,
-            74
-          ]
-        ],
-        "s": [
-          [
-            80,
-            0,
-            1
-          ],
-          [
-            2,
-            3,
-            4
-          ],
-          [
-            5,
-            6,
-            7
-          ],
-          [
-            7,
-            8,
-            9
-          ],
-          [
-            9,
-            10,
-            11
-          ],
-          [
-            11,
-            12,
-            13
-          ],
-          [
-            13,
-            14,
-            15
-          ],
-          [
-            15,
-            16,
-            17
-          ],
-          [
-            17,
-            18,
-            19
-          ],
-          [
-            20,
-            21,
-            22
-          ],
-          [
-            22,
-            23,
-            24
-          ],
-          [
-            24,
-            25,
-            26
-          ],
-          [
-            26,
-            27,
-            28
-          ],
-          [
-            28,
-            29,
-            30
-          ],
-          [
-            30,
-            31,
-            32
-          ],
-          [
-            32,
-            33,
-            34
-          ],
-          [
-            34,
-            35,
-            36
-          ],
-          [
-            36,
-            37,
-            38
-          ],
-          [
-            38,
-            39,
-            40
-          ],
-          [
-            40,
-            41,
-            42
-          ],
-          [
-            41,
-            42,
-            43
-          ],
-          [
-            43,
-            44,
-            45
-          ],
-          [
-            45,
-            46,
-            47
-          ],
-          [
-            47,
-            48,
-            49
-          ],
-          [
             49,
             50,
             51
           ],
           [
-            51,
             52,
-            53
-          ],
-          [
             53,
-            54,
-            55
+            0
           ],
           [
             55,
@@ -13473,39 +13243,211 @@
             59
           ],
           [
+            59,
+            60,
+            61
+          ],
+          [
+            61,
             62,
+            63
+          ],
+          [
             63,
-            64
-          ],
-          [
             64,
+            65
+          ],
+          [
             65,
-            66
-          ],
-          [
             66,
+            67
+          ],
+          [
             67,
-            68
-          ],
-          [
             68,
+            69
+          ],
+          [
             69,
-            70
-          ],
-          [
             70,
+            71
+          ]
+        ],
+        "s": [
+          [
+            83,
+            0,
+            1
+          ],
+          [
+            2,
+            3,
+            4
+          ],
+          [
+            6,
+            7,
+            8
+          ],
+          [
+            8,
+            9,
+            10
+          ],
+          [
+            10,
+            11,
+            12
+          ],
+          [
+            12,
+            13,
+            14
+          ],
+          [
+            14,
+            15,
+            16
+          ],
+          [
+            16,
+            17,
+            18
+          ],
+          [
+            18,
+            19,
+            20
+          ],
+          [
+            21,
+            22,
+            23
+          ],
+          [
+            23,
+            24,
+            25
+          ],
+          [
+            25,
+            26,
+            27
+          ],
+          [
+            27,
+            28,
+            29
+          ],
+          [
+            29,
+            30,
+            31
+          ],
+          [
+            31,
+            32,
+            33
+          ],
+          [
+            33,
+            34,
+            35
+          ],
+          [
+            35,
+            36,
+            37
+          ],
+          [
+            37,
+            38,
+            39
+          ],
+          [
+            39,
+            40,
+            41
+          ],
+          [
+            41,
+            42,
+            43
+          ],
+          [
+            42,
+            43,
+            44
+          ],
+          [
+            45,
+            46,
+            47
+          ],
+          [
+            48,
+            49,
+            50
+          ],
+          [
+            50,
+            51,
+            52
+          ],
+          [
+            52,
+            53,
+            54
+          ],
+          [
+            54,
+            55,
+            56
+          ],
+          [
+            56,
+            57,
+            58
+          ],
+          [
+            58,
+            59,
+            60
+          ],
+          [
+            60,
+            61,
+            62
+          ],
+          [
+            65,
+            66,
+            67
+          ],
+          [
+            67,
+            68,
+            69
+          ],
+          [
+            69,
+            70,
+            71
+          ],
+          [
             71,
-            72
-          ],
-          [
             72,
-            73,
-            74
+            73
           ],
           [
+            73,
             74,
+            75
+          ],
+          [
             75,
-            76
+            76,
+            77
           ],
           [
             77,
@@ -13513,8 +13455,13 @@
             79
           ],
           [
-            79,
             80,
+            81,
+            82
+          ],
+          [
+            82,
+            83,
             0
           ]
         ]
@@ -13523,7 +13470,6 @@
         "K",
         "uni2B1C",
         "carondot.lc.ss07",
-        "uni01BD",
         "uni046E",
         "uni046F",
         "uni2038",
@@ -13545,9 +13491,6 @@
         ],
         "carondot.lc.ss07": [
           "tangent-quantization-revert: Could not preserve 24 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 24 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block"
-        ],
-        "uni01BD": [
-          "tangent-quantization-revert: Could not preserve 32 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 31 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block"
         ],
         "uni046E": [
           "tangent-quantization-revert: Could not preserve 55 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 55 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; two-center line block has no candidate within movement, angle, and direction limits; solver exceeded 7000000 work units while evaluating a two-center line block"
@@ -13580,19 +13523,19 @@
           "tangent-quantization-revert: Could not preserve 33 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 33 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block"
         ],
         "circumflextildecomb.cn": [
-          "tangent-quantization-revert: Could not preserve 42 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 40 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block"
+          "tangent-quantization-revert: Could not preserve 41 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block; stable-v2 retry: Could not preserve 39 smooth join(s) during TrueType quantization: two-center line block has no candidate within movement, angle, and direction limits; component 0: joint constraints have no compatible assignment; component 0: joint constraints have no compatible assignment; solver exceeded 7000000 work units while evaluating a two-center line block"
         ]
       },
       "ttf": "src/desktop/OpenRunde-BlackItalic.ttf",
-      "ttf_sha256": "bd5c137bc57867bfe1d8307de04feca0845cb3d14f6b10d3a4acc9b72c64e506",
+      "ttf_sha256": "67bc41d3cb1133258eff9176a1ff7c5fcbb5a9f22c0a3a906e01a7cb273d1464",
       "woff2": "src/web/OpenRunde-BlackItalic.woff2",
-      "woff2_sha256": "d0dc477611290ce0142e0ee21dccd0acc54f0292a526dc05f52552639e3d9fde",
+      "woff2_sha256": "0eca951d5caa1740097b9d342e1547e253c7882e9a9d80980812116139f3988b",
       "proof": "proofs/v2/OpenRunde-BlackItalic.png",
-      "proof_sha256": "8f7e2cc292523055c272c893f5e8fbe382057fef70786167c308e05a1804fe4d",
+      "proof_sha256": "0154577a49249aa1815727b24fc4c64fa748be97ea7d4ee035fb78dc3417b1c9",
       "build_fingerprints": {
-        "builder_sha256": "a9de625e8cfc68ed24ca8633fbf90cf5acea1ac7558b4712d701961e448a7272",
+        "builder_sha256": "b49180fbd486c08c680043c6a90c1c85678f195aba665de656b2e34ab29d3167",
         "tangent_quantization_sha256": "a03ad9d2e532f4b8da6b74faa465c24fe6031f6f8796d1dea46e29c125e8b435",
-        "rounding_core_sha256": "ae32c7271b592a824cc2af103feb16571365da9eef8555163fb718c24e0751db",
+        "rounding_core_sha256": "edf80284d5d0fe3cf77a22773ff298562a10b39d2f4ba66e2a695da7673a7f0e",
         "python": "3.9.6",
         "fonttools": "4.60.2",
         "pillow": "11.3.0",
