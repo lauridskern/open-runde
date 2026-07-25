@@ -1,0 +1,15 @@
+Open Runde
+==========
+
+Original Inter design
+---------------------
+Rasmus Andersson and The Inter Project Authors
+https://github.com/rsms/inter
+
+Open Runde adaptation
+---------------------
+Laurids Kern
+https://lau.ke
+
+Open Runde is a modified version of Inter and is not endorsed by the Inter
+Project Authors.

@@ -1,0 +1,144 @@
+/* Open Runde 2.000 static web family */
+@font-face {
+  font-family: "Open Runde";
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url("OpenRunde-Thin.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url("OpenRunde-ThinItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url("OpenRunde-ExtraLight.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url("OpenRunde-ExtraLightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("OpenRunde-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url("OpenRunde-LightItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("OpenRunde-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("OpenRunde-Italic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("OpenRunde-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url("OpenRunde-MediumItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("OpenRunde-SemiBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url("OpenRunde-SemiBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("OpenRunde-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("OpenRunde-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("OpenRunde-ExtraBold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url("OpenRunde-ExtraBoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("OpenRunde-Black.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Open Runde";
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url("OpenRunde-BlackItalic.woff2") format("woff2");
+}
